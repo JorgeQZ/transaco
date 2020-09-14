@@ -6,14 +6,55 @@ BY AEKVIA
 
 /* --------SECTION INTREACTUABLE-------- */
 
-#section-img-inte {
-    width: 100%;
-    height: 700px;
+.bx-wrapper .bx-pager {
+    display: none !important;
 }
 
-.img-inter {
-    height: 700px;
-    width: 100%;
+#slider_226 .owl-item {
+    border: none !important;
+}
+
+#slider_226 .owl-item img {
+    height: 136px !important;
+    margin-bottom: 40px;
+}
+
+#slider_226 .owl-item p {
+    font-size: 16px;
+    font-family: 'Akzid-Bol' !important;
+    color: black !important;
+}
+
+.sa_owl_theme .disabled .owl-prev,
+.sa_owl_theme .disabled .owl-next {
+    display: block !important;
+}
+
+nav.disabled,
+.owl-carousel .owl-dots.disabled {
+    display: block !important;
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+    display: block !important;
+}
+
+.sa_owl_theme .disabled .owl-prev,
+.sa_owl_theme .disabled .owl-next {
+    display: block !important;
+}
+
+.owl-next {
+    display: block !important;
+}
+
+.owl-prev {
+    display: block !important;
+}
+
+.sa_owl_theme .disabled .owl-next {
+    display: block !important;
 }
 
 .cont-tec {
@@ -30,6 +71,7 @@ BY AEKVIA
 
 .cont-tec-tit {
     width: 50%;
+    display: -ms-grid;
     display: grid;
     align-items: center;
     align-content: center;
@@ -38,7 +80,6 @@ BY AEKVIA
 .cont-tec-desc {
     width: 50%;
 }
-
 
 .cont-tec-tit>div {
     margin: 20px;
@@ -50,7 +91,6 @@ BY AEKVIA
     color: white;
     font-family: 'Akzid-Bol';
     font-size: 1.6em;
-
 }
 
 .btn-tec-mas {
@@ -61,29 +101,44 @@ BY AEKVIA
     border-radius: 2px;
     width: 45%;
     text-align: center;
-
 }
-.img-desc-tec{
+
+.img-desc-tec {
     width: 30%;
 }
-.desc-img-tec{
-    color:white;
+
+.desc-img-tec {
+    color: white;
     font-family: 'Akzid-Reg';
 }
-.cont-item{
+
+.cont-item {
     width: 50%;
     display: inline-block;
     margin-right: -4px;
 }
 
 
+
+
+
+
+
 /* -------- SECTION SLIDER ------------ */
 
 #section-slider {
+    display: block;
+    height: auto;
     width: 100%;
-    height: 300px;
+    padding: 10px;
+    padding-top: 30px;
     background: white;
 }
+
+
+
+
+
 
 
 /* -------- SECTION COMPROMISO ------------ */
@@ -111,18 +166,28 @@ BY AEKVIA
 }
 
 .tit-compro {
-    font-size: 2em;
+    margin: 0;
+    font-size: 2.5em;
     color: #11a233;
     font-family: 'Akzid-Bol';
 }
 
 .desc-compro {
+    font-size: 16px;
     color: white;
     font-family: 'Akzid-Reg';
 }
 
+
+
+
+
+
+
 /* Byron */
+
 .btn-compro {
+    text-decoration: none;
     color: white;
     font-family: 'Akzid-Reg';
     background: rgba(29, 167, 52, 0.575);
@@ -134,16 +199,28 @@ BY AEKVIA
     transition: all .5s;
 }
 
-.btn-compro:hover{
+.btn-compro:hover {
     color: rgba(29, 167, 52, 0.575);
     background: white;
     cursor: pointer;
 }
 
+
+
+
+
+
+
 /* Fin Byron*/
+
 .Mrosa {
     background: rebeccapurple;
 }
+
+
+
+
+
 
 
 /* --------SECTION NOTICIAS O EVENTOS  ---------- */
@@ -239,145 +316,189 @@ BY AEKVIA
 
 
 
+
+
+
 /* Byron */
 
 @media screen and (min-width: 320px) {
-
+    #section-img-inte {
+        width: 100%;
+        height: 300px;
+    }
     /* -------- SECTION COMPROMISO ------------ */
-
     #section-compromiso {
         display: block;
         width: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
         height: auto;
         background-image: url(../img/index/fondo-verde.jpg);
     }
-
     .cont-compro {
         width: 90%;
         margin: 0 auto;
         display: block;
     }
-
-    .cont-img-compro{
+    .cont-img-compro {
+        margin-right: 30px;
         display: none;
     }
-
-    .cont-img-compro-xs{
+    .cont-img-compro-xs {
         padding: 5%;
     }
-
     .cont-text-compro {
         padding: 5%;
     }
-
     /* -------- SECTION VIDEO ------------ */
-
     #video {
         width: 100%;
         height: auto;
         background-color: #000000;
     }
-
     .cont-video {
         height: auto;
         width: 90%;
         margin: 0 auto;
     }
-
-    .cont-video div iframe{
+    .cont-video div iframe {
         height: auto;
         width: 100%;
         margin-top: 1em;
         margin-bottom: 1em;
     }
+    #menuItems {
+        padding-top: 20px;
+        width: 50%;
+        margin: 0 auto;
+        min-height: 150px;
+        align-items: center;
+    }
+    #menuItems div {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
 
+    #menuItems p {
+        /*margin-left: -13px;*/
+        /*text-transform: uppercase;*/
+        font-size: 12px;
+        text-align: center;
+        /*font-family: 'Akzid-Bol';*/
+        color: #575757;
+    }
 
+    #menuItems p span {
+        font-family: 'Akzid-Bol';
+    }
+}
 
+@media screen and (min-width: 320px) {
+    .sliderHomeExt {
+        width: 100%;
+        height: 280px;
+        background-size: cover;
+        -ms-background-position: center;
+        background-position: center;
+    }
 }
 
 @media screen and (min-width: 768px) {
-
+    #section-img-inte {
+        display: block;
+        width: 100%;
+        height: 580px;
+    }
+    .sliderHomeExt {
+        width: 100%;
+        height: 580px;
+        background-size: cover;
+    }
     /* -------- SECTION COMPROMISO ------------ */
-
     #section-compromiso {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 400px;
+        height: auto;
+        background-size: cover;
+        padding: 30px;
         background-image: url(../img/index/fondo-verde.jpg);
     }
-
     .cont-compro {
         width: 90%;
         margin: 0 auto;
         display: flex;
     }
-
-    .cont-img-compro-xs{
+    .cont-img-compro-xs {
         display: none;
     }
-
-    .cont-img-compro{
+    .cont-img-compro {
         display: block;
     }
-
     .cont-text-compro {
         padding: 30px;
     }
-
     /* ------------SECTION VIDEO ------------ */
-
     #video {
         width: 100%;
-        height: 400px;
+        padding: 30px;
         background-color: #000000;
     }
-
     .cont-video {
         display: flex;
         height: 350px;
         width: 90%;
         margin: 0 auto;
     }
-
     .child-video-1 {
         width: 65%;
     }
-
     .child-video-2 {
         width: 35%;
+        margin-left: 10px;
     }
-
     .child-video-2>div {
+        margin-bottom: 5px;
         padding: 5px;
         width: 100%;
-        height: 48%;
+        height: 50%;
         display: inline-block;
     }
-
     .cont-video div iframe {
         height: 100%;
         width: 100%;
         margin: 0;
     }
-
-
+    #menuItems {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        min-height: 150px;
+        align-items: center;
+    }
+    #menuItems div {
+        width: 24.80%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-
+    #menuItems {
+        width: 80%;
+    }
+    #menuItems p {
+        /*font-size: 20px;*/
+    }
     .cont-compro {
         width: 70%;
         margin: 0 auto;
         display: flex;
     }
-
     .cont-video {
         display: flex;
         height: 350px;
         width: 80%;
         margin: 0 auto;
     }
-
-
 }

@@ -1,0 +1,131 @@
+/* Footer  estilos  */
+
+
+/*
+@font-face {
+  font-family: 'Akzid-Bol';
+  src: url('../css/fonts/AkzidGrtskProBol.otf') ;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akzid-Reg';
+  src: url('../css/fonts/AkzidGrtskProReg.otf') ;
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+*/
+
+@media screen and (min-width: 320px) {
+    footer {
+        /*     width: 100%;*/
+    }
+    footer p {
+        color: #575757;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 10px;
+        margin: 10px;
+
+        text-align: center;
+        font-family: 'Akzid-Reg';
+    }
+    footer span {
+        font-size: 10px;
+        font-family: 'Akzid-Bol';
+    }
+    footer img {
+        width: 90%;
+        margin: 15px 15px;
+    }
+    footer a {
+        text-decoration: none;
+        color: #575757;
+        font-family: 'Akzid-Bol';
+        transition-duration: .5s;
+        cursor: pointer;
+        padding-right: 30px;
+    }
+    footer a:hover {
+        color: #ce1127;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        align-items: center;
+        /* width: 100%;*/
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer p {
+        width: 70%;
+        font-size: 10px;
+        margin: 0;
+        font-family: 'Akzid-Reg';
+    }
+    footer span {
+        font-size: 10px;
+        font-family: 'Akzid-Bol';
+    }
+    footer img {
+        width: 70%;
+        padding-left: 30px;
+    }
+    footer div:nth-child(2) {
+        display: flex;
+        align-items: center;
+    }
+    footer a {
+        text-decoration: none;
+        color: #232323;
+        font-family: 'Akzid-Bol';
+        transition-duration: .5s;
+        cursor: pointer;
+        padding-right: 30px;
+    }
+    footer a:hover {
+        color: #ce1127;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    footer p {
+        font-size: 10px;
+        width: 100%;
+    }
+    footer span {
+        font-size: 10px;
+    }
+    footer img {
+        width: 60%;
+        padding-left: 30px;
+    }
+    .textLink {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    footer p {
+        margin-bottom: 10px;
+        font-size: 10px;
+        margin-left: 100px;
+    }
+    footer span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    footer p {
+        font-size: 10px;
+        margin-left: 100px;
+    }
+    footer span {
+        font-size: 12px;
+    }
+}

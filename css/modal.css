@@ -1,0 +1,272 @@
+.js .tmce-active .wp-editor-area {
+  color: #32373c !important;
+}
+
+@media screen and (min-width: 320px) {
+  .modal-cont {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: none;
+    top: 0px;
+    z-index: 300;
+  }
+  .modal-cont .modal-item {
+    width: 95%;
+    min-height: auto;
+    background-color: #FFF;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 0px 0px 20px 4px black;
+            box-shadow: 0px 0px 20px 4px black;
+    border: 3px solid white;
+    padding: 20px;
+    padding-top: 50px;
+    margin: 0 auto;
+    top: 50px;
+  }
+  .modal-cont .modal-item button {
+    background: transparent;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+  }
+  .modal-cont .modal-item button img {
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .modal-cont .modal-item button img:hover {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  .modal-cont .modal-item button p {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    line-height: 30px;
+    margin-top: -7px;
+  }
+  .modal-cont .modal-item .titulo {
+    font-family: 'Akzid-Bol';
+    font-size: 30px;
+    color: white;
+    margin: 0;
+  }
+  .modal-cont .modal-item .info {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .modal-cont .modal-item .info .img_desc {
+    text-align: left;
+  }
+  .modal-cont .modal-item .info .img_desc > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .modal-cont .modal-item .info .img_desc a img {
+    width: 40px;
+  }
+  .modal-cont .modal-item .info .content {
+    color: white;
+    padding: 10px;
+  }
+  .modal-cont .modal-item .info .content iframe {
+    max-width: 100%;
+    max-height: 200px;
+  }
+  .video-cont {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .video-cont.act {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .video-cont .close_video {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+  }
+  .video-cont iframe {
+    width: 75%;
+    height: 150px;
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-cont {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    /* display: none;*/
+  }
+  .modal-cont .modal-item {
+    width: 70%;
+    min-height: auto;
+    background-color: #FFF;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+  }
+  .modal-cont .modal-item button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    outline: none;
+  }
+  .modal-cont .modal-item .titulo {
+    font-family: 'Akzid-Bol';
+    font-size: 30px;
+    color: white;
+    margin: 0;
+  }
+  .modal-cont .modal-item .info {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .modal-cont .modal-item .info .img_desc > img {
+    margin: 0px;
+    width: 100%;
+    height: auto;
+  }
+  .modal-cont .modal-item .info .content {
+    width: 60%;
+    padding: 10px;
+  }
+  .modal-cont .modal-item .info .content iframe {
+    max-width: 100%;
+    max-height: 200px;
+  }
+  .video-cont iframe {
+    width: 75%;
+    height: 450px;
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-cont {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    /* display: none;*/
+  }
+  .modal-cont .modal-item {
+    min-height: auto;
+    background-color: #FFF;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+  }
+  .modal-cont .modal-item button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    outline: none;
+  }
+  .modal-cont .modal-item .titulo {
+    font-family: 'Akzid-Bol';
+    font-size: 30px;
+    color: white;
+    margin: 0;
+  }
+  .modal-cont .modal-item .info {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .modal-cont .modal-item .info .img_desc > img {
+    max-width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 300px;
+    width: auto;
+  }
+  .modal-cont .modal-item .info .img_desc a img {
+    margin-top: 10px;
+    width: 40px;
+  }
+  .modal-cont .modal-item .info .content {
+    width: 60%;
+    padding: 10px;
+  }
+  .modal-cont .modal-item .info .content iframe {
+    max-width: 100%;
+    max-height: 200px;
+  }
+  .video-cont iframe {
+    width: 75%;
+    height: 550px;
+    max-width: 1024px;
+  }
+}

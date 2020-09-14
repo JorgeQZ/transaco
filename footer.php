@@ -1,8 +1,12 @@
-	<footer>
-		<section id="ft_widgets">
-			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer') ) : endif; ?>
-		</section>
-		<p id="copyright">My Blog Copyright @ 2014</p>
+<footer>
+		<div>
+			<img class="logo-trans" src="<?php echo get_template_directory_uri() . '/img/logo-transaco.png' ?>" alt="">
+		</div>
+		<div class="contText">
+			<div id="correo" class="footer-widget">
+				<?php dynamic_sidebar('correo'); ?>
+			</div>
+		</div>
 	</footer>
 	<?php wp_footer();?>
 </body>

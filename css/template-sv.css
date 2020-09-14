@@ -1,0 +1,161 @@
+/* Jorge Quezada */
+/* Plantilla productos  Aislamiento Industrial*/
+@media screen and (min-width: 320px) {
+  .wrapper .content .prod-sv-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 48.8%;
+    display: block;
+    background-color: #FFF;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-bottom: 5px;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .cont .img {
+    text-align: center;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .cont .img img {
+    max-width: 100%;
+    width: auto;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .cont .info {
+    padding: 10px;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .cont .info p {
+    padding: 0;
+    margin: 0;
+    color: #595959;
+    font-family: 'Akzid-Bol';
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .file {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 5px;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .file a img {
+    cursor: pointer;
+    width: 120px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper .content .prod-sv-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 32.8%;
+    max-width: 32.8%;
+    display: -ms-inline-grid;
+    display: inline-grid;
+    margin-bottom: 10px;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .cont .img {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .cont .img:hover {
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+    background-color: rgba(98, 98, 98, 0.2);
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .cont .img img {
+    min-height: 200px;
+    max-height: 200px;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .cont .info {
+    padding: 10px;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .cont .info p {
+    padding: 0;
+    margin: 0;
+    color: #595959;
+    font-family: 'Akzid-Bol';
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .file {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 5px;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .file a img {
+    cursor: pointer;
+    width: 120px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper .content .prod-sv-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 24.8%;
+    max-width: 24.8%;
+    margin-bottom: 10px;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .cont .info {
+    padding: 10px;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .cont .info p {
+    padding: 0;
+    margin: 0;
+    color: #595959;
+    font-family: 'Akzid-Bol';
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .file {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 5px;
+  }
+  .wrapper .content .prod-sv-cont .prod-sv-item .file a img {
+    cursor: pointer;
+    width: 120px;
+  }
+}

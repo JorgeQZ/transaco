@@ -1,0 +1,362 @@
+@charset "UTF-8";
+/* Jorge Quezada */
+/* Plantilla productos  Fichas Técnicas*/
+@media screen and (min-width: 320px) {
+  .fichas-cont {
+    width: 100%;
+    height: auto;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e8e8e9), to(white));
+    background: linear-gradient(to top, #e8e8e9, white);
+    border: 2px solid #e8e8e9;
+    padding: 20px;
+  }
+  .fichas-cont .cabecera {
+    display: none;
+  }
+  .fichas-cont .ficha-item {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 65px;
+  }
+  .fichas-cont .ficha-item div img {
+    width: 40px;
+  }
+  .fichas-cont .ficha-item .titulo {
+    width: 100%;
+    color: #2078a6;
+    font-family: "Akzid-Bol";
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .fichas-cont .ficha-item .outer-row:nth-child(even) {
+    background-color: rgba(150, 150, 150, 0.12);
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    display: block;
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .subtitle {
+    text-align: left;
+    padding-left: 15px;
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .subtitle ul {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .subtitle ul li {
+    list-style-type: square;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: #2078a6;
+    font-family: "Akzid-Reg";
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .ficha,
+  .fichas-cont .ficha-item .outer-row .inner-row .garantia,
+  .fichas-cont .ficha-item .outer-row .inner-row .leed,
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos {
+    text-align: center;
+    display: inline-block;
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .ficha a,
+  .fichas-cont .ficha-item .outer-row .inner-row .garantia a,
+  .fichas-cont .ficha-item .outer-row .inner-row .leed a,
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos a {
+    margin: 10px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    -webkit-box-shadow: 0px 0px 11px -5px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 11px -5px rgba(0, 0, 0, 0.7);
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .ficha a img,
+  .fichas-cont .ficha-item .outer-row .inner-row .garantia a img,
+  .fichas-cont .ficha-item .outer-row .inner-row .leed a img,
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos a img {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .ficha a p,
+  .fichas-cont .ficha-item .outer-row .inner-row .garantia a p,
+  .fichas-cont .ficha-item .outer-row .inner-row .leed a p,
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos a p {
+    display: inline-block;
+    color: #f15744;
+    margin: 0;
+    text-decoration: none;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    display: block;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .subtitle {
+    text-align: left;
+    padding-left: 85px;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .subtitle ul {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .subtitle ul li {
+    list-style-type: square;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: #2078a6;
+    font-family: "Akzid-Reg";
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia {
+    text-align: center;
+    padding-left: 85px;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha a,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a {
+    margin: 10px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha a img,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a img {
+    display: inline-block;
+    margin-right: 10px;
+    -webkit-box-shadow: 5px 5px 11px -5px black;
+            box-shadow: 5px 5px 11px -5px black;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha a p,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a p {
+    display: inline-block;
+    color: #f15744;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fichas-cont {
+    width: 100%;
+    height: auto;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e8e8e9), to(white));
+    background: linear-gradient(to top, #e8e8e9, white);
+    border: 2px solid #e8e8e9;
+    padding: 30px;
+  }
+  .fichas-cont .cabecera {
+    width: 100%;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: "Akzid-Bol";
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #727272;
+  }
+  .fichas-cont .cabecera div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 1;
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 20%;
+            flex: 1 0 20%;
+  }
+  .fichas-cont .cabecera div:nth-child(1) {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .fichas-cont .ficha-item {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 65px;
+  }
+  .fichas-cont .ficha-item div img {
+    width: 40px;
+  }
+  .fichas-cont .ficha-item .titulo {
+    width: 100%;
+    color: #2078a6;
+    font-family: "Akzid-Bol";
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .fichas-cont .ficha-item .outer-row {
+    padding: 2px;
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+  }
+  .fichas-cont .ficha-item .outer-row:nth-child(even) {
+    background-color: rgba(150, 150, 150, 0.12);
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .subtitle {
+    width: 30%;
+    text-align: left;
+    padding-left: 35px;
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .subtitle ul {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .subtitle ul li {
+    list-style-type: square;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #2078a6;
+    line-height: 1;
+    font-family: "Akzid-Reg";
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .ficha,
+  .fichas-cont .ficha-item .outer-row .inner-row .garantia,
+  .fichas-cont .ficha-item .outer-row .inner-row .leed,
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos {
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 20%;
+            flex: 1 0 20%;
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .ficha a,
+  .fichas-cont .ficha-item .outer-row .inner-row .garantia a,
+  .fichas-cont .ficha-item .outer-row .inner-row .leed a,
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos a {
+    margin: 0;
+    display: block;
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: none;
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .ficha a img,
+  .fichas-cont .ficha-item .outer-row .inner-row .garantia a img,
+  .fichas-cont .ficha-item .outer-row .inner-row .leed a img,
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos a img {
+    margin: 0;
+    -webkit-box-shadow: 5px 5px 11px -5px black;
+            box-shadow: 5px 5px 11px -5px black;
+  }
+  .fichas-cont .ficha-item .outer-row .inner-row .ficha a p,
+  .fichas-cont .ficha-item .outer-row .inner-row .garantia a p,
+  .fichas-cont .ficha-item .outer-row .inner-row .leed a p,
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos a p {
+    display: none;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row {
+    padding: 2px;
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .subtitle {
+    width: 30%;
+    text-align: left;
+    padding-left: 95px;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .subtitle ul {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .subtitle ul li {
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    color: #2078a6;
+    font-family: "Akzid-Reg";
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .leed,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos {
+    padding: 0;
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 20%;
+            flex: 1 0 20%;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha a,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .leed a,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos a {
+    margin: 0;
+    display: block;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha a img,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a img,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .leed a img,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos a img {
+    margin: 0;
+    -webkit-box-shadow: 5px 5px 11px -5px black;
+            box-shadow: 5px 5px 11px -5px black;
+  }
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha a p,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a p,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .leed a p,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos a p {
+    display: none;
+  }
+}

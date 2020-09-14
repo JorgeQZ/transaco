@@ -1,30 +1,35 @@
 <?php get_header(); ?>
 
-<section id="main">
-		<section id="articles_list">
+<section id="main">			
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<div class="wrapper">
+			<div class="content-not contentPage">
+				<div>
+					<p id="titulo">
+						<?php the_title(); ?>
+					</p>
+				</div>
 
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-			<article>
-
-				<hgroup><h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2></hgroup>
-				<div class="date"><?php the_date();?> en <span><?php the_category();?></span></div>
-				<div class="extract"><?php the_content();?></div>
-			</article>
-		
-		<?php endwhile; else: ?>
-		<h1>No se encontraron Articulos</h1>
-		<?php endif; ?>
-
-		<div id="comentarios">
-			<h3>Comentarios</h3>
-			<div id="caja_comentarios">
-				 <?php comments_template(); ?>
+				<!-- header hero -->
+				<?php
+				$thumbnail = get_post_thumbnail_id($post->ID);
+				$imgDestacada = wp_get_attachment_url( $thumbnail );
+				if(!$thumbnail){
+					$imgDestacada = get_template_directory_uri().'/img/ai-bg.jpg';
+				}
+				?>
+				<div class="hero" style="background-image: url(<?php echo $imgDestacada; ?>);"></div>
+				<div class="content-page">
+					<div class="date"><?php the_date(); ?></div>
+					<div class="content-article"><?php the_content();?></div>
+				</div>
 			</div>
 		</div>
 
-		</section>
-<?php get_sidebar(); ?>
+	<?php endwhile; else: ?>
+	<h1>No se encontraron Articulos</h1>
+<?php endif; ?>
 </section>
 
 <?php get_footer(); ?>

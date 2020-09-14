@@ -1,0 +1,226 @@
+/* Jorge Quezada */
+/* Plantilla productos  Aislamiento Habitacional*/
+@media screen and (min-width: 320px) {
+  .wrapper .content .productos {
+    display: block;
+  }
+  .wrapper .content .productos .prod-cont {
+    min-height: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    /* border: 4px solid rgba(#000, 0.2);*/
+    position: relative;
+  }
+  .wrapper .content .productos .prod-cont .titulo {
+    color: #595959;
+    font-size: 28px;
+    font-family: 'Akzid-Bol';
+  }
+  .wrapper .content .productos .prod-cont .slider-cont {
+    width: 100%;
+    padding: 20px 0px;
+    overflow-x: hidden;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont .control {
+    z-index: 9999;
+    position: absolute;
+    top: calc(50% - 20px);
+    cursor: pointer;
+    width: auto;
+    height: auto;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont .control.right {
+    right: 0px;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont .control img {
+    cursor: pointer;
+    width: 40px;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul {
+    list-style: none;
+    position: relative;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li .img_desc {
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li .img_desc img {
+    margin: 0 auto;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li .cont-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li .cont-info .info {
+    width: 66.66%;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li .cont-info .info p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Akzid-Reg';
+    font-size: 16px;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li .cont-info .info p.titulo {
+    font-family: 'Akzid-Bol';
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li .cont-info .file {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 60px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 10.5px;
+    text-align: right;
+    font-family: 'Akzid-Bol';
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li .cont-info .file a img {
+    width: 50px;
+  }
+  .wrapper .content .lands {
+    padding: 50px 0px;
+    display: block;
+  }
+  .wrapper .content .lands div {
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 100%;
+    margin: 5px 0px;
+  }
+  .wrapper .content .lands div:hover {
+    opacity: 0.7;
+  }
+  .wrapper .content .lands div img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper .content .lands {
+    padding: 50px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrapper .content .lands div:nth-child(1) {
+    width: 26.5%;
+  }
+  .wrapper .content .lands div:nth-child(2) {
+    width: 30%;
+  }
+  .wrapper .content .lands div:nth-child(3) {
+    width: 42%;
+  }
+  .wrapper .content .lands div a img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper .content .productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrapper .content .productos .prod-cont {
+    min-height: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 49%;
+    padding: 10px;
+  }
+  .wrapper .content .productos .prod-cont .titulo {
+    color: #595959;
+    font-size: 28px;
+    font-family: 'Akzid-Bol';
+  }
+  .wrapper .content .productos .prod-cont .slider-cont {
+    width: 100%;
+    padding: 20px 0px;
+    /* overflow: hidden;*/
+  }
+  .wrapper .content .productos .prod-cont .slider-cont .control {
+    z-index: 9999;
+    position: absolute;
+    top: calc(50% - 20px);
+    cursor: pointer;
+    width: auto;
+    height: auto;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont .control.right {
+    right: 0px;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont .control img {
+    cursor: pointer;
+    width: 40px;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul {
+    list-style: none;
+    display: block;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li .img_desc {
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li .img_desc img {
+    margin: 0 auto;
+    width: 85%;
+    margin-bottom: 40px;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li .cont-info .file {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 60px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .wrapper .content .productos .prod-cont .slider-cont ul li .cont-info .file a img {
+    width: 50px;
+  }
+  .wrapper .content .lands {
+    padding: 50px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrapper .content .lands div:nth-child(1) {
+    width: 26.5%;
+  }
+  .wrapper .content .lands div:nth-child(2) {
+    width: 30%;
+  }
+  .wrapper .content .lands div:nth-child(3) {
+    width: 42%;
+  }
+  .wrapper .content .lands div a img {
+    width: 100%;
+  }
+}

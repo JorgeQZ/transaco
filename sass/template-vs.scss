@@ -1,0 +1,241 @@
+/* Jorge Quezada */
+
+$c-title-bl: #009cd8;
+$titulo: #595959;
+@media screen and (min-width: 320px) {
+  .wrapper {
+    .content {
+      .productos-cont {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item-cont {
+          flex-grow: 1;
+          width: 100%;
+          min-height: 180px;
+          background-color: rgba(#000, 0.05);
+          background-position: center;
+          background-size: cover;
+          margin: 5px auto;
+          position: relative;
+          >a {
+            img {
+              width: 80px;
+              position: absolute;
+              bottom: 10px;
+              right: 10px;
+            }
+          }
+          .titulo {
+            font-family: 'Akzid-Bol';
+            font-size: 19px;
+            padding: 7px;
+          }
+          .slider-cont {
+            padding: 5px;
+            overflow: hidden;
+
+            ul {
+              position: relative;
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                cursor: pointer;
+
+                float: left;
+                margin: 0;
+                padding: 0;
+                justify-content: center;
+                .img_desc {
+                  width: 45%;
+                  img {
+                    width: 100%;
+                    transition: all 0.3s;
+                    &:hover {
+                      -webkit-filter: brightness(80%);
+                      filter: brightness(80%);
+                    }
+                  }
+                }
+                .info {
+                  width: 45%;
+                  padding: 10px;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  p {
+                    padding: 0;
+                    margin: 0;
+                    font-family: 'Akzid-Reg';
+                    font-size: 13px;
+                    line-height: 16px;
+                  }
+                  a {
+                    img {
+                      width: 40px;
+                      margin-top: 5px;
+                    }
+                  }
+                }
+              }
+            }
+            .control {
+              padding: 2px;
+              width: 10%;
+              position: relative;
+              display: flex;
+              align-items: center;
+              position: absolute;
+              right: 0px;
+              bottom: 5px;
+              img {
+
+                height: 50px;
+                margin-left: -5px;
+              }
+            }
+
+            .control {
+              &.left {
+
+
+
+                left: 0px;
+                bottom: 5px;
+                img {
+
+                  height: 50px;
+                  margin-left: 2px;
+                  -webkit-transform: rotateZ(180deg);
+                  transform: rotateZ(180deg);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    .content {
+      .productos-cont {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        .item-cont {
+          max-width: 32.8%;
+          margin: 0px;
+          min-height: 20px;
+          background-color: rgba(#000, 0.05);
+          background-position: center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    .content {
+      .productos-cont {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        .item-cont {
+          width: 32.8%;
+          margin: 0px;
+          min-height: 20px;
+          background-color: rgba(#000, 0.05);
+          background-position: center;
+          background-size: cover;
+          >a {
+            img {
+              width: 60px;
+              position: absolute;
+              bottom: 10px;
+              right: 10px;
+            }
+          }
+          .titulo {
+            font-family: 'Akzid-Bol';
+            font-size: 19px;
+            padding: 7px;
+          }
+          .slider-cont {
+            padding: 5px;
+            overflow: hidden;
+
+            ul {
+              position: relative;
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                cursor: pointer;
+                position: relative;
+                float: left;
+                align-items: flex-start;
+                margin: 0;
+                padding: 0;
+                .img_desc {
+                  width: 45%;
+                  img {
+                    width: 100%;
+                  }
+                }
+                .info {
+                  width: 45%;
+                  padding: 10px;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  p {
+                    padding: 0;
+                    margin: 0;
+                    font-family: 'Akzid-Reg';
+                    font-size: 13px;
+                    line-height: 16px;
+                  }
+                  a {
+                    img {
+                      width: 40px;
+                      margin-top: 5px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
