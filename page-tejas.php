@@ -281,6 +281,11 @@ $slider = get_field('sa_slider_pc', $id_page);
         <!-- contenido de tejas -->
 
         <div class="slider-cont-tejas act" id="s1">
+            asas aqui puede ir un video sin pedos
+            <h2>Video</h2>
+            <div class="prod-video-cont">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/P-oxH2uJ23U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 800px; margin: 0 auto;"></iframe>
+            </div>
             <section class="slider-">
                 <div class="titulo">
                     <p><?php echo get_field('titulo_slider_supreme', $id_page);  ?></p>

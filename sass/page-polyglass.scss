@@ -1,0 +1,237 @@
+.sa_hover_container {
+    p {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .wrapper {
+        .hero-banner {
+            position: relative;
+            img {
+                width: 100%;
+            }
+
+            .title {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                color: white;
+                font-weight: bolder;
+                font-size: 30px;
+                line-height: 1;
+                text-align: center;
+            }
+        }
+
+        .content-poly {
+            padding: 20px 10px;
+            max-width: 1280px;
+            margin: 0 auto;
+            .grid-cont {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                .col {
+                    width: 100%;
+                    .logo {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            width: 100%;
+                            max-width: 280px;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .desc {
+                        max-width: 700px;
+                        font-family: "Akzid-Reg";
+                        margin-bottom: 30px;
+                        .title {
+                            color: #006bb7;
+                            font-weight: bolder;
+                            font-size: 18px;
+                            margin: 10px 0;
+                            font-family: "Akzid-Bol";
+                            margin: 10px 0;
+                        }
+                        .text {
+                            text-align: justify;
+                            color: #909090;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cont-prod {
+            padding: 10px 10px;
+            background-color: #f5f3f3;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            .item-prod {
+                margin-bottom: 20px;
+                .img-cont {
+                    text-align: center;
+                    min-width: 200px;
+                    padding-bottom: 40px;
+                    margin-bottom: 30px;
+                    position: relative;
+                    img {
+                        max-height: 230px;
+                    }
+                    &:before {
+                        content: "";
+                        width: 100%;
+                        height: 0;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 1px;
+                        background-color: rgba(0, 0, 0, 0.2);
+                        filter: blur(3px);
+                        box-shadow: 0 0 13px 4px rgba(0, 0, 0, 0.2);
+                        border-radius: 50%;
+                    }
+                }
+
+                .text {
+                    text-align: center;
+                    line-height: 1.5;
+                    color: #9d9d9d;
+                    font-size: 18px;
+                    font-family: "Akzid-Bol";
+                }
+
+                .button {
+                    margin: 0 auto;
+                    text-align: center;
+                    display: block;
+                    img {
+                        max-width: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        .hero-banner {
+            position: relative;
+            img {
+                width: 100%;
+            }
+
+            .title {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                color: white;
+                font-weight: bolder;
+                font-size: 30px;
+            }
+        }
+
+        .content-poly {
+            padding: 50px 60px;
+            max-width: 1280px;
+            margin: 0 auto;
+            .grid-cont {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: row;
+                .col {
+                    width: fit-content;
+                    margin: 0 20px;
+                    .logo {
+                        max-width: 280px;
+                    }
+
+                    .desc {
+                        padding: 0 20px;
+                        max-width: 700px;
+                        font-family: "Akzid-Reg";
+                        .title {
+                            color: #006bb7;
+                            font-weight: bolder;
+                            font-size: 18px;
+                            margin: 10px 0;
+                            font-family: "Akzid-Bol";
+                        }
+                        .text {
+                            text-align: justify;
+                            color: #909090;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cont-prod {
+            padding: 60px;
+            background-color: #f5f3f3;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+
+            .item-prod {
+                .img-cont {
+                    text-align: center;
+                    min-width: 200px;
+                    padding-bottom: 40px;
+                    margin-bottom: 30px;
+                    position: relative;
+                    img {
+                        max-height: 330px;
+                    }
+                    &:before {
+                        content: "";
+                        width: 100%;
+                        height: 0;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 1px;
+                        background-color: rgba(0, 0, 0, 0.2);
+                        filter: blur(3px);
+                        box-shadow: 0 0 13px 4px rgba(0, 0, 0, 0.2);
+                        border-radius: 50%;
+                    }
+                }
+
+                .text {
+                    text-align: center;
+                    line-height: 1.5;
+                    color: #9d9d9d;
+                    font-size: 18px;
+                    font-family: "Akzid-Bol";
+                }
+
+                .button {
+                    margin: 0 auto;
+                    text-align: center;
+                    display: block;
+                    img {
+                        max-width: 120px;
+                    }
+                }
+            }
+        }
+    }
+}

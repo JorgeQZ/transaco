@@ -32,8 +32,9 @@ $second_slider =  get_field('sa_slider_pc', $id);
 
     <!-- menu movil -->
     <!-- <div class="button-menu-mobile" id="bmm">
-		<span><</span><span>Productos</span>
-	</div> -->
+        <span>
+            << /span><span>Productos</span>
+    </div> -->
     <!-- menu movil -->
 
 
@@ -401,23 +402,7 @@ $second_slider =  get_field('sa_slider_pc', $id);
 
 <!-- fin de contenido -->
 
-<!-- menu principal -->
-<div class="prod-nav-cont" id="pnc">
-    <?php
-		$args = array (
-			'theme-location' => 'productos-menu',
-			'container'		 => 'nav',
-			'container-class' => 'productos-menu'
-		);
 
-		wp_nav_menu( array(
-			'theme_location' => 'productos-menu',
-			'container'		 => 'nav',
-			'container-class' => 'productos-menu'
-		) );
-		?>
-</div>
-<!-- menu principal -->
 
 </div>
 <script>

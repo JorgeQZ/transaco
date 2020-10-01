@@ -59,7 +59,7 @@ function tran_styles(){
 	wp_register_style('modal-ai', get_template_directory_uri().'/css/modal-ai.css', array(), '2.3');
 	wp_register_style('box-popup', get_template_directory_uri().'/css/box-popup.css', array(), '2.3');
 
-	
+
 	wp_enqueue_style('owlcarouselCSS');
 	wp_enqueue_style('template-tejas');
 	wp_enqueue_style('template-ai');
@@ -82,9 +82,22 @@ function tran_styles(){
 	wp_enqueue_style('template-ft');
 	wp_enqueue_style('template-sv');
 	wp_enqueue_style('box-popup');
+
+
 }
 add_action('init', 'tran_styles');
 
+
+add_action( 'wp_enqueue_scripts', 'new_styles', 101 );
+function new_styles() {
+	// Enqueue the catalgo styles
+	if(is_page_template("page-polyglass.php")){
+
+		wp_enqueue_style( 'polyglass', get_stylesheet_directory_uri() .'/css/page-polyglass.css' );
+
+	}
+
+}
 // SCRIPTS
 function tran_scripts(){
 
