@@ -22,7 +22,6 @@ $productos = get_field('productos');
 $slider = get_field('sa_slider_pc');
 ?>
 <div class="wrapper">
-
     <div class="content">
         <div class="hero-banner">
             <div class="title">
