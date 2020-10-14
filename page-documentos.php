@@ -182,6 +182,7 @@
 						$ficha_tecnica = get_field('ficha_tecnica', $current_id);
 						$garantia = get_field('garantia', $current_id);
 						$leed = get_field('leed', $current_id);
+						$complementos = get_field('complementos', $current_id);
 						?>
                 <div class="outer-row">
                     <div class="inner-row">
@@ -218,10 +219,10 @@
 
                         </div>
                         <div class="complementos">
-                            <?php if($leed){ ?>
-                            <a href="<?php echo $leed ?>" target="_blank">
+                            <?php if($complementos){ ?>
+                            <a href="<?php echo $complementos ?>" target="_blank">
                                 <img src="<?php echo get_template_directory_uri().'/img/save.png' ?>" alt="">
-                                <p>Leed</p>
+                                <p>Complementos</p>
                             </a>
                             <?php } ?>
 
@@ -280,10 +281,10 @@
 
                         </div>
                         <div class="complementos">
-                            <?php if($leed){ ?>
-                            <a href="<?php echo $leed ?>" target="_blank">
+                            <?php if($complementos){ ?>
+                            <a href="<?php echo $complementos ?>" target="_blank">
                                 <img src="<?php echo get_template_directory_uri().'/img/save.png' ?>" alt="">
-                                <p>Leed</p>
+                                <p>Complementos</p>
                             </a>
                             <?php } ?>
 

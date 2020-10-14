@@ -82,22 +82,9 @@ function tran_styles(){
 	wp_enqueue_style('template-ft');
 	wp_enqueue_style('template-sv');
 	wp_enqueue_style('box-popup');
-
-
 }
 add_action('init', 'tran_styles');
 
-
-add_action( 'wp_enqueue_scripts', 'new_styles', 101 );
-function new_styles() {
-	// Enqueue the catalgo styles
-	if(is_page_template("page-polyglass.php")){
-
-		wp_enqueue_style( 'polyglass', get_stylesheet_directory_uri() .'/css/page-polyglass.css' );
-
-	}
-
-}
 // SCRIPTS
 function tran_scripts(){
 

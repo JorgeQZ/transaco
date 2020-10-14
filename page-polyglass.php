@@ -17,7 +17,6 @@
 <?php
 get_header();
 $texto = get_field('texto');
-
 $productos = get_field('productos');
 $slider = get_field('sa_slider_pc');
 ?>
