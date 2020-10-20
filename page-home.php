@@ -214,9 +214,9 @@ $slide5 = get_field('slide-5');
     <div>
         <p>
             <span class="bold__">Oficinas y Showroom</span><br>
-            Valenzuela Castillo 1078 <br>
-            Providencia, Santiago, Chile <br>
-            Tel.: (56) 227 977 700 <br>
+            San Crescente 81, Piso 7 <br>
+            Las Condes<br>
+            Tel: (56) 227 977 700 <br>
 
         </p>
         <p></p>
@@ -226,7 +226,7 @@ $slide5 = get_field('slide-5');
             <span class="bold__">Bodega</span><br>
             Av. Vizcaya N. 16.701-3 <br>
             Parque Industrial Los Espinos - Pudahuel <br>
-            Tel.: (56) 227 977 732<br>
+            Tel: (56) 227 977 732<br>
         </p>
     </div>
 </section>

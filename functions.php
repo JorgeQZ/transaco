@@ -3,6 +3,7 @@
 add_theme_support( 'post-thumbnails');
 add_image_size( 'slider_thumbs', 470, 300, true );
 add_image_size( 'list_articles_thumbs', 450, 370, true );
+add_image_size( 'page_banner', 1200, 310,array( 'center', 'center' ) );
 register_nav_menus( array(
 	'productos-menu' => __( 'Productos Menu', 'transaco' ),
 	'menu' => __( 'Menu superior', 'transaco' )
@@ -85,6 +86,17 @@ function tran_styles(){
 }
 add_action('init', 'tran_styles');
 
+
+add_action( 'wp_enqueue_scripts', 'new_styles', 101 );
+function new_styles() {
+	// Enqueue the catalgo styles
+	if(is_page_template("page-polyglass.php")){
+
+		wp_enqueue_style( 'polyglass', get_stylesheet_directory_uri() .'/css/page-polyglass.css' );
+
+	}
+
+}
 // SCRIPTS
 function tran_scripts(){
 

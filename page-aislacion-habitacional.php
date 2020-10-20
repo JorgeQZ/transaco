@@ -36,9 +36,8 @@ $linkProducto = get_field('link_3') ;
             <div class="img-item act">
                 <!-- Imagen destacada de la página -->
                 <?php
-				$thumbnail = get_post_thumbnail_id($post->ID);
-				$imgDestacada = wp_get_attachment_url( $thumbnail );
-				if(!$thumbnail){
+				$imgDestacada = get_the_post_thumbnail_url($post->ID, 'page_banner');
+				if(!$imgDestacada){
 					$imgDestacada = get_template_directory_uri().'/img/ai-bg.jpg';
 				}
 				?>

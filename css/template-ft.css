@@ -59,14 +59,18 @@
   .fichas-cont .ficha-item .outer-row .inner-row .ficha,
   .fichas-cont .ficha-item .outer-row .inner-row .garantia,
   .fichas-cont .ficha-item .outer-row .inner-row .leed,
-  .fichas-cont .ficha-item .outer-row .inner-row .complementos {
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos,
+  .fichas-cont .ficha-item .outer-row .inner-row .folleto,
+  .fichas-cont .ficha-item .outer-row .inner-row .video {
     text-align: center;
     display: inline-block;
   }
   .fichas-cont .ficha-item .outer-row .inner-row .ficha a,
   .fichas-cont .ficha-item .outer-row .inner-row .garantia a,
   .fichas-cont .ficha-item .outer-row .inner-row .leed a,
-  .fichas-cont .ficha-item .outer-row .inner-row .complementos a {
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos a,
+  .fichas-cont .ficha-item .outer-row .inner-row .folleto a,
+  .fichas-cont .ficha-item .outer-row .inner-row .video a {
     margin: 10px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -88,14 +92,18 @@
   .fichas-cont .ficha-item .outer-row .inner-row .ficha a img,
   .fichas-cont .ficha-item .outer-row .inner-row .garantia a img,
   .fichas-cont .ficha-item .outer-row .inner-row .leed a img,
-  .fichas-cont .ficha-item .outer-row .inner-row .complementos a img {
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos a img,
+  .fichas-cont .ficha-item .outer-row .inner-row .folleto a img,
+  .fichas-cont .ficha-item .outer-row .inner-row .video a img {
     display: inline-block;
     margin-right: 10px;
   }
   .fichas-cont .ficha-item .outer-row .inner-row .ficha a p,
   .fichas-cont .ficha-item .outer-row .inner-row .garantia a p,
   .fichas-cont .ficha-item .outer-row .inner-row .leed a p,
-  .fichas-cont .ficha-item .outer-row .inner-row .complementos a p {
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos a p,
+  .fichas-cont .ficha-item .outer-row .inner-row .folleto a p,
+  .fichas-cont .ficha-item .outer-row .inner-row .video a p {
     display: inline-block;
     color: #f15744;
     margin: 0;
@@ -127,12 +135,20 @@
     font-family: "Akzid-Reg";
   }
   .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha,
-  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia {
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .leed,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .folleto,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .video {
     text-align: center;
     padding-left: 85px;
   }
   .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha a,
-  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a {
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .leed a,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos a,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .folleto a,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .video a {
     margin: 10px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -145,14 +161,22 @@
             justify-content: flex-start;
   }
   .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha a img,
-  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a img {
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a img,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .leed a img,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos a img,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .folleto a img,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .video a img {
     display: inline-block;
     margin-right: 10px;
     -webkit-box-shadow: 5px 5px 11px -5px black;
             box-shadow: 5px 5px 11px -5px black;
   }
   .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha a p,
-  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a p {
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a p,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .leed a p,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos a p,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .folleto a p,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .video a p {
     display: inline-block;
     color: #f15744;
   }
@@ -196,8 +220,8 @@
     line-height: 1;
     text-align: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 20%;
-            flex: 1 0 20%;
+        -ms-flex: 1 0 16.66%;
+            flex: 1 0 16.66%;
   }
   .fichas-cont .cabecera div:nth-child(1) {
     text-align: left;
@@ -263,16 +287,20 @@
   .fichas-cont .ficha-item .outer-row .inner-row .ficha,
   .fichas-cont .ficha-item .outer-row .inner-row .garantia,
   .fichas-cont .ficha-item .outer-row .inner-row .leed,
-  .fichas-cont .ficha-item .outer-row .inner-row .complementos {
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos,
+  .fichas-cont .ficha-item .outer-row .inner-row .folleto,
+  .fichas-cont .ficha-item .outer-row .inner-row .video {
     text-align: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 20%;
-            flex: 1 0 20%;
+        -ms-flex: 1 0 16.66%;
+            flex: 1 0 16.66%;
   }
   .fichas-cont .ficha-item .outer-row .inner-row .ficha a,
   .fichas-cont .ficha-item .outer-row .inner-row .garantia a,
   .fichas-cont .ficha-item .outer-row .inner-row .leed a,
-  .fichas-cont .ficha-item .outer-row .inner-row .complementos a {
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos a,
+  .fichas-cont .ficha-item .outer-row .inner-row .folleto a,
+  .fichas-cont .ficha-item .outer-row .inner-row .video a {
     margin: 0;
     display: block;
     padding: 0;
@@ -283,7 +311,9 @@
   .fichas-cont .ficha-item .outer-row .inner-row .ficha a img,
   .fichas-cont .ficha-item .outer-row .inner-row .garantia a img,
   .fichas-cont .ficha-item .outer-row .inner-row .leed a img,
-  .fichas-cont .ficha-item .outer-row .inner-row .complementos a img {
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos a img,
+  .fichas-cont .ficha-item .outer-row .inner-row .folleto a img,
+  .fichas-cont .ficha-item .outer-row .inner-row .video a img {
     margin: 0;
     -webkit-box-shadow: 5px 5px 11px -5px black;
             box-shadow: 5px 5px 11px -5px black;
@@ -291,7 +321,9 @@
   .fichas-cont .ficha-item .outer-row .inner-row .ficha a p,
   .fichas-cont .ficha-item .outer-row .inner-row .garantia a p,
   .fichas-cont .ficha-item .outer-row .inner-row .leed a p,
-  .fichas-cont .ficha-item .outer-row .inner-row .complementos a p {
+  .fichas-cont .ficha-item .outer-row .inner-row .complementos a p,
+  .fichas-cont .ficha-item .outer-row .inner-row .folleto a p,
+  .fichas-cont .ficha-item .outer-row .inner-row .video a p {
     display: none;
   }
   .fichas-cont .ficha-item .outer-row .sub-inner-row {
@@ -331,24 +363,30 @@
   .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha,
   .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia,
   .fichas-cont .ficha-item .outer-row .sub-inner-row .leed,
-  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos {
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .folleto,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .video {
     padding: 0;
     text-align: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 20%;
-            flex: 1 0 20%;
+        -ms-flex: 1 0 16.66%;
+            flex: 1 0 16.66%;
   }
   .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha a,
   .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a,
   .fichas-cont .ficha-item .outer-row .sub-inner-row .leed a,
-  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos a {
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos a,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .folleto a,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .video a {
     margin: 0;
     display: block;
   }
   .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha a img,
   .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a img,
   .fichas-cont .ficha-item .outer-row .sub-inner-row .leed a img,
-  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos a img {
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos a img,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .folleto a img,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .video a img {
     margin: 0;
     -webkit-box-shadow: 5px 5px 11px -5px black;
             box-shadow: 5px 5px 11px -5px black;
@@ -356,7 +394,9 @@
   .fichas-cont .ficha-item .outer-row .sub-inner-row .ficha a p,
   .fichas-cont .ficha-item .outer-row .sub-inner-row .garantia a p,
   .fichas-cont .ficha-item .outer-row .sub-inner-row .leed a p,
-  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos a p {
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .complementos a p,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .folleto a p,
+  .fichas-cont .ficha-item .outer-row .sub-inner-row .video a p {
     display: none;
   }
 }

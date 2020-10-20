@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Documentos
+ * Template Name: Backup Documentos
  *
  * @package WordPress
  * @subpackage Transaco
@@ -129,20 +129,23 @@
 
         <div class="fichas-cont">
             <div class="cabecera">
+                <!-- <div>Productos</div>
+                <div>Fichas técnicas</div>
+                <div>Garantías</div>
+                <div>Leed</div>
+                <div>Complementos</div> -->
                 <div>Productos</div>
                 <div>Fichas <br>Técnicas</div>
                 <div>Folletos</div>
                 <div>Garantías</div>
-                <div>Video</div>
                 <div>Certificado <br>Leed</div>
-
             </div>
 
             <?php
 			$args = array(
 				'post_type' => 'docs',
 				'post_status' => 'publish',
-				'posts_per_page' => -1,
+				'post_per_page' => -1,
 				'post_parent' => 0 ,
 				'orderby' => 'date',
 				'order' => 'ASC'
@@ -171,7 +174,7 @@
 					$new_arg = array(
 						'post_type' => 'docs',
 						'post_status' => 'publish',
-						'posts_per_page' => -1,
+						'post_per_page' => -1,
 						'post_parent' => $parent_ID,
 						'orderby' => 'date',
 						'order' => 'ASC'
@@ -184,8 +187,7 @@
 						$ficha_tecnica = get_field('ficha_tecnica', $current_id);
 						$garantia = get_field('garantia', $current_id);
 						$leed = get_field('leed', $current_id);
-						$folletos = get_field('folletos', $current_id);
-                        $video = get_field('video', $current_id);
+						$complementos = get_field('complementos', $current_id);
 						?>
                 <div class="outer-row">
                     <div class="inner-row">
@@ -201,16 +203,25 @@
                                 <p>Ficha técnica</p>
                             </a>
                             <?php } ?>
-
+                            <div></div>
                         </div>
-
+                        <div class="ficha">
+                            <?php if($ficha_tecnica){ ?>
+                            <a href="<?php echo $ficha_tecnica ?>" target="_blank">
+                                <img src="<?php echo get_template_directory_uri().'/img/save.png' ?>" alt="">
+                                <p>Ficha técnica</p>
+                            </a>
+                            <?php } ?>
+                            <div></div>
+                        </div>
                         <div class="folleto">
-                            <?php if($folletos){ ?>
-                            <a href="<?php echo $folletos ?>" target="_blank">
+                            <?php if($folleto){ ?>
+                            <a href="<?php echo $folleto ?>" target="_blank">
                                 <img src="<?php echo get_template_directory_uri().'/img/save.png' ?>" alt="">
                                 <p>Folleto</p>
                             </a>
                             <?php } ?>
+                            <div></div>
                         </div>
                         <div class="garantia">
                             <?php if($garantia){ ?>
@@ -221,14 +232,6 @@
                             <?php } ?>
 
                         </div>
-                        <div class="video">
-                            <?php if($video){ ?>
-                            <a href="<?php echo $video ?>" target="_blank">
-                                <img src="<?php echo get_template_directory_uri().'/img/video.png' ?>" alt="">
-                                <p>Video</p>
-                            </a>
-                            <?php } ?>
-                        </div>
                         <div class="leed">
                             <?php if($leed){ ?>
                             <a href="<?php echo $leed ?>" target="_blank">
@@ -238,35 +241,30 @@
                             <?php } ?>
 
                         </div>
-
                     </div>
 
                     <?php
-                            $new_sub_arg = array(
-                                'post_type' => 'docs',
-                                'post_status' => 'publish',
-                                'posts_per_page' => -1,
-                                'post_parent' => $current_id,
-                                'orderby' => 'date',
-                                'order' => 'ASC'
-                            );
-                            $new_sub_query = new WP_Query($new_sub_arg);
-                            while( $new_sub_query->have_posts()):
-                                $new_sub_query->the_post();
-                                $current_sub_id = $post->ID;
-                                $ficha_nombre = get_the_title($current_sub_id);
-                                $ficha_tecnica = get_field('ficha_tecnica', $current_sub_id);
-                                $garantia = get_field('garantia', $current_sub_id);
-                                $leed = get_field('leed', $current_sub_id);
-                                $folletos = get_field('folletos', $current_sub_id);
-                                $video = get_field('video', $current_sub_id);
-
-                            ?>
+                    $new_sub_arg = array(
+                        'post_type' => 'docs',
+                        'post_status' => 'publish',
+                        'post_per_page' => -1,
+                        'post_parent' => $current_id,
+                        'orderby' => 'date',
+                        'order' => 'ASC'
+                    );
+                    $new_sub_query = new WP_Query($new_sub_arg);
+                    while( $new_sub_query->have_posts()):
+                        $new_sub_query->the_post();
+                        $current_sub_id = $post->ID;
+                        $ficha_nombre = get_the_title($current_sub_id);
+                        $ficha_tecnica = get_field('ficha_tecnica', $current_sub_id);
+                        $garantia = get_field('garantia', $current_sub_id);
+                        $leed = get_field('leed', $current_sub_id);
+                    ?>
                     <div class="sub-inner-row">
                         <div class="subtitle">
                             <ul>
                                 <li><?php echo $ficha_nombre;?></li>
-
                             </ul>
                         </div>
                         <div class="ficha">
@@ -276,15 +274,16 @@
                                 <p>Ficha técnica</p>
                             </a>
                             <?php } ?>
+                            <div></div>
                         </div>
-                        <div class="folleto">
-                            <?php if($folletos){ ?>
-                            <a href="<?php echo $folletos ?>" target="_blank">
+                        <div class="ficha">
+                            <?php if($ficha_tecnica){ ?>
+                            <a href="<?php echo $ficha_tecnica ?>" target="_blank">
                                 <img src="<?php echo get_template_directory_uri().'/img/save.png' ?>" alt="">
-                                <p>Folleto</p>
+                                <p>Ficha técnica</p>
                             </a>
                             <?php } ?>
-
+                            <div></div>
                         </div>
 
                         <div class="garantia">
@@ -296,14 +295,6 @@
                             <?php } ?>
 
                         </div>
-                        <div class="video">
-                            <?php if($video){ ?>
-                            <a href="<?php echo $video ?>" target="_blank">
-                                <img src="<?php echo get_template_directory_uri().'/img/video.png' ?>" alt="">
-                                <p>Video</p>
-                            </a>
-                            <?php } ?>
-                        </div>
                         <div class="leed">
                             <?php if($leed){ ?>
                             <a href="<?php echo $leed ?>" target="_blank">
@@ -311,26 +302,23 @@
                                 <p>Leed</p>
                             </a>
                             <?php } ?>
-                        </div>
 
+                        </div>
                     </div>
                     <?php
-                            endwhile;
-                            wp_reset_query();
-                            ?>
-
+                    endwhile;
+                    wp_reset_query();
+                    ?>
                 </div>
-
                 <?php
-
-                            endwhile;
-                            wp_reset_query() ;
-                            ?>
+                    endwhile;
+                    wp_reset_query() ;
+					?>
 
             </div>
             <?php
-                    }
-                    ?>
+			}
+			?>
         </div>
     </div>
     <!-- fin de contenido -->

@@ -14,7 +14,7 @@ $id_page = get_the_ID();
 $titulo = get_the_title($id_page);
 $img = get_field('img_desc_vs', $id);
 $slider = get_field('slider', $id);
-if(!slider){
+if(!$slider){
 	$slider = "[slide-anything id='198']";
 }
 

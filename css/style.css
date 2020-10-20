@@ -67,7 +67,9 @@ body {
   font-family: "open sans", Arial, Helvetica, sans-serif;
 }
 
-header, #main, footer {
+header,
+#main,
+footer {
   width: 100%;
   margin: 0px auto;
 }
@@ -101,7 +103,7 @@ a:hover {
 
 #main #slideshow article {
   float: left;
-  font-family: 'Open Sans', arial, helvetica, sans-serif;
+  font-family: "Open Sans", arial, helvetica, sans-serif;
   font-size: 1rem;
   text-align: justify;
   width: 49%;
@@ -109,15 +111,15 @@ a:hover {
 }
 
 #main #slideshow article h2 {
-  font-family: 'Raleway', helvetica, arial, sans-serif;
+  font-family: "Raleway", helvetica, arial, sans-serif;
   font-size: 2rem;
   font-weight: 300;
   text-align: left;
 }
 
 #main #slideshow article .date {
-  font-family: 'Raleway', helvetica, arial, sans-serif;
-  font-size: .8rem;
+  font-family: "Raleway", helvetica, arial, sans-serif;
+  font-size: 0.8rem;
   font-weight: 500;
   margin-bottom: 10px;
   margin-right: 3px;
@@ -128,8 +130,8 @@ a:hover {
 #main #slideshow article .post-categories {
   display: inline-block;
   list-style: none;
-  font-family: 'Raleway', helvetica, arial, sans-serif;
-  font-size: .8rem;
+  font-family: "Raleway", helvetica, arial, sans-serif;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -199,7 +201,7 @@ a:hover {
 }
 
 #main #articles_list article .date {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #777777;
   margin-bottom: 10px;
 }
@@ -221,7 +223,7 @@ a:hover {
 #main #articles_list #pagination p a {
   margin: 0px 20px;
   font-size: 1.5rem;
-  font-family: 'Raleway', helvetica, arial, sans-serif;
+  font-family: "Raleway", helvetica, arial, sans-serif;
   font-weight: 300;
   display: inline-block;
 }
@@ -259,7 +261,7 @@ a:hover {
 
 .widget ul li a {
   font-family: "open-sans", helvetica, arial, sans-serif;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #777777;
 }
 
@@ -284,7 +286,7 @@ footer #copyright {
   padding: 10px;
   color: #333333;
   font-family: "Raleway", "open-sans", helvetica, arial;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 /*Blog*/
@@ -326,7 +328,7 @@ footer #copyright {
 #titulo {
   padding: 10px;
   color: #5f5f5f;
-  font-family: 'Akzid-Reg';
+  font-family: "Akzid-Reg";
   font-size: 2.7em;
   border-left: 5px solid #006bb7;
 }
@@ -386,7 +388,7 @@ footer #copyright {
 .div-cont-desc-pan {
   background: rgba(182, 204, 123, 0.767);
   height: 400px;
-  width: 75%;
+  width: 80%;
   position: absolute;
   margin-left: 12.5%;
   margin-top: 4%;
@@ -413,7 +415,7 @@ footer #copyright {
     width: 100%;
     height: 100%;
     background: rgba(10, 58, 91, 0.5);
-    font-family: 'Akzid-Bol';
+    font-family: "Akzid-Bol";
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
@@ -426,12 +428,12 @@ footer #copyright {
     height: 60px;
   }
   .home-noticias-item .info .date {
-    font-family: 'Akzid-Reg';
+    font-family: "Akzid-Reg";
     font-size: 22px;
     color: #44a7ff;
   }
   .home-noticias-item .info .extracto {
-    font-family: 'Akzid-Reg';
+    font-family: "Akzid-Reg";
     font-size: 15px;
     display: none;
     line-height: 18px;
@@ -485,7 +487,7 @@ footer #copyright {
   }
   .desc-contact-cont p {
     margin: 0;
-    font-family: 'Raleway', helvetica, arial, sans-serif;
+    font-family: "Raleway", helvetica, arial, sans-serif;
     font-size: 14px;
   }
   .contenedor-contacto {
@@ -494,7 +496,7 @@ footer #copyright {
   }
   .desc-contact-cont p {
     margin: 0;
-    font-family: 'Raleway', helvetica, arial, sans-serif;
+    font-family: "Raleway", helvetica, arial, sans-serif;
     font-size: 14px;
   }
   .input-contact {
@@ -517,8 +519,8 @@ footer #copyright {
     background: #006bb7;
     color: white;
     font-weight: 600;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .textarea-contact {
     width: 100%;
@@ -533,7 +535,7 @@ footer #copyright {
   }
   .formulario-contacto div p {
     margin: 0;
-    font-family: 'Raleway', helvetica, arial, sans-serif;
+    font-family: "Raleway", helvetica, arial, sans-serif;
     font-size: 14px;
     font-weight: 600;
   }
@@ -543,14 +545,14 @@ footer #copyright {
   }
   .tit-desc-contact {
     margin: 0;
-    font-family: 'Raleway', helvetica, arial, sans-serif;
+    font-family: "Raleway", helvetica, arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
     margin-top: 1em;
   }
   .subtit-desc-contact {
     margin: 0;
-    font-family: 'Raleway', helvetica, arial, sans-serif;
+    font-family: "Raleway", helvetica, arial, sans-serif;
     font-size: 13px;
   }
   .cont-des-contact {
@@ -585,7 +587,7 @@ footer #copyright {
   }
   .desc-contact-cont p {
     margin: 0;
-    font-family: 'Raleway', helvetica, arial, sans-serif;
+    font-family: "Raleway", helvetica, arial, sans-serif;
     font-size: 14px;
   }
   .input-contact {
@@ -608,8 +610,8 @@ footer #copyright {
     background: #006bb7;
     color: white;
     font-weight: 600;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .textarea-contact {
     width: 100%;
@@ -637,7 +639,7 @@ footer #copyright {
   }
   .formulario-contacto div p {
     margin: 0;
-    font-family: 'Raleway', helvetica, arial, sans-serif;
+    font-family: "Raleway", helvetica, arial, sans-serif;
     font-size: 14px;
     font-weight: 600;
   }
@@ -647,14 +649,14 @@ footer #copyright {
   }
   .tit-desc-contact {
     margin: 0;
-    font-family: 'Raleway', helvetica, arial, sans-serif;
+    font-family: "Raleway", helvetica, arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
     margin-top: 1em;
   }
   .subtit-desc-contact {
     margin: 0;
-    font-family: 'Raleway', helvetica, arial, sans-serif;
+    font-family: "Raleway", helvetica, arial, sans-serif;
     font-size: 13px;
   }
   .cont-contact-decoration {
@@ -668,7 +670,7 @@ footer #copyright {
     display: block;
   }
   .transaco-decoration {
-    font-family: 'Montserrat-Bold';
+    font-family: "Montserrat-Bold";
     font-size: 24px;
     color: #006bb7;
     position: absolute;
@@ -696,23 +698,24 @@ footer #copyright {
 }
 
 @media screen and (min-width: 1440px) {
-  .formulario-contacto div p, .desc-contact-cont p {
+  .formulario-contacto div p,
+  .desc-contact-cont p {
     font-size: 16px;
   }
   .tit-desc-contact {
     margin: 0;
-    font-family: 'Raleway', helvetica, arial, sans-serif;
+    font-family: "Raleway", helvetica, arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
     margin-top: 1em;
   }
   .subtit-desc-contact {
     margin: 0;
-    font-family: 'Raleway', helvetica, arial, sans-serif;
+    font-family: "Raleway", helvetica, arial, sans-serif;
     font-size: 15px;
   }
   .transaco-decoration {
-    font-family: 'Montserrat-Bold';
+    font-family: "Montserrat-Bold";
     font-size: 40px;
     color: #006bb7;
     position: absolute;

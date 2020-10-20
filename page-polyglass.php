@@ -26,7 +26,7 @@ $slider = get_field('sa_slider_pc');
             <div class="title">
                 <?php the_title(); ?>
             </div>
-            <img src="<?php echo get_the_post_thumbnail_url();?>" alt="<?php the_title();?>">
+            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'page_banner');?>">
         </div>
         <div class="content-poly">
             <div class="grid-cont">

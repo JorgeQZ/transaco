@@ -30,12 +30,12 @@ $slider = get_field('sa_slider_pc', $id);
             <div class="img-item act">
                 <!-- Imagen destacada de la página -->
                 <?php
-				$thumbnail = get_post_thumbnail_id($post->ID);
-				$imgDestacada = wp_get_attachment_url( $thumbnail );
-				if(!$thumbnail){
-					$imgDestacada = get_template_directory_uri().'/img/ai-bg.jpg';
-				}
-				?>
+			$imgDestacada = get_the_post_thumbnail_url($post->ID, 'page_banner');
+
+            if(!$imgDestacada){
+                $imgDestacada = get_template_directory_uri().'/img/ai-bg.jpg';
+            }
+            ?>
                 <img src="<?php echo $imgDestacada ?>" alt="<?php echo the_title().' Imagen Destacada'; ?>">
             </div>
         </div>
