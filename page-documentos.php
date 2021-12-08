@@ -124,7 +124,44 @@
         <div class="titulo">
             <p><?php the_title(); ?></p>
             <small>Garantías y fichas técnicas</small>
+
         </div>
+
+
+<?php
+	$args = array(
+        'post_type' => 'catalogo_productos',
+        'post_status' => 'published',
+        'posts_per_page' => 1,
+        'post_parent' => 0 ,
+        'orderby' => 'date',
+        'order' => 'DESC'
+    );
+
+    $cata_prod = new WP_Query($args);
+
+    if($cata_prod->have_posts()):
+        while($cata_prod->have_posts()):
+            $cata_prod->the_post();
+            $file = get_field('archivo');
+            $filesize = filesize(get_attached_file($file['id']));
+
+            if($file):
+            ?>
+              <div class="catalogo-cont">
+              <strong>Catálogo general de productos:</strong>
+              <a href="<?php echo $file['url'] ?>" target="_blank">
+              <img src="<?php echo get_template_directory_uri().'/img/save.png' ?>" alt="">
+              <p><?php echo size_format($filesize); ?></p>
+              </a>
+
+              </div>
+            <?php
+            endif;
+        endwhile;
+        wp_reset_query();
+    endif;
+?>
 
 
         <div class="fichas-cont">

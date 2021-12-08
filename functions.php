@@ -59,6 +59,7 @@ function tran_styles(){
 	wp_register_style('template-ft', get_template_directory_uri().'/css/template-ft.css', array(), '2.3');
 	wp_register_style('modal-ai', get_template_directory_uri().'/css/modal-ai.css', array(), '2.3');
 	wp_register_style('box-popup', get_template_directory_uri().'/css/box-popup.css', array(), '2.3');
+	wp_register_style('catalogo', get_template_directory_uri().'/css/catalogo.css', array(), '2.3');
 
 
 	wp_enqueue_style('owlcarouselCSS');
@@ -83,6 +84,8 @@ function tran_styles(){
 	wp_enqueue_style('template-ft');
 	wp_enqueue_style('template-sv');
 	wp_enqueue_style('box-popup');
+	wp_enqueue_style('catalogo');
+
 }
 add_action('init', 'tran_styles');
 
@@ -93,6 +96,12 @@ function new_styles() {
 	if(is_page_template("page-polyglass.php")){
 
 		wp_enqueue_style( 'polyglass', get_stylesheet_directory_uri() .'/css/page-polyglass.css' );
+
+	}
+
+	if(is_page_template("page-home.php")){
+
+		wp_enqueue_style( 'home-anuncio', get_stylesheet_directory_uri() .'/css/home-anuncio.css', true);
 
 	}
 

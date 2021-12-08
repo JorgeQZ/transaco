@@ -2,6 +2,22 @@
 /* Jorge Quezada */
 /* Plantilla Tejas Asfálticas */
 @media screen and (min-width: 320px) {
+  .prod-video-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .prod-video-cont video {
+    width: 90%;
+    height: auto;
+    max-width: 1000px;
+  }
   .wrapper .content .buttons-cont {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -52,7 +68,7 @@
   .wrapper .content .buttons-cont .content-item .button-item .text {
     width: auto;
     font-size: 25px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-weight: lighter;
     text-align: center;
     color: white;
@@ -78,7 +94,7 @@
     filter: blur(0px);
   }
   .wrapper .content .buttons-cont .content-item .teja .titulo {
-    font-family: 'Akzid-Bol';
+    font-family: "Akzid-Bol";
     font-size: 12px;
     margin-bottom: 15px;
   }
@@ -98,7 +114,7 @@
     padding: 0;
     margin: 0;
     color: #060606;
-    font-family: 'Akzid-Reg';
+    font-family: "Akzid-Reg";
   }
   .wrapper .content .buttons-cont .content-item .teja .info .desc p:nth-child(1) {
     font-size: 10px;
@@ -177,7 +193,7 @@
   .wrapper .content .buttons-cont .content-item .button-item .text {
     width: 100px;
     font-size: 24px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-weight: lighter;
     text-align: center;
     color: white;
@@ -203,7 +219,7 @@
     filter: blur(0px);
   }
   .wrapper .content .buttons-cont .content-item .teja .titulo {
-    font-family: 'Akzid-Bol';
+    font-family: "Akzid-Bol";
     font-size: 12px;
     margin-bottom: 15px;
   }
@@ -225,7 +241,7 @@
     padding: 0;
     margin: 0;
     color: #060606;
-    font-family: 'Akzid-Reg';
+    font-family: "Akzid-Reg";
   }
   .wrapper .content .buttons-cont .content-item .teja .info .desc p:nth-child(1) {
     font-size: 10px;
@@ -299,7 +315,7 @@
   .wrapper .content .buttons-cont .content-item .button-item .text {
     width: 100px;
     font-size: 18px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-weight: lighter;
     text-align: center;
     color: white;
@@ -325,7 +341,7 @@
     filter: blur(0px);
   }
   .wrapper .content .buttons-cont .content-item .teja .titulo {
-    font-family: 'Akzid-Bol';
+    font-family: "Akzid-Bol";
     font-size: 12px;
     margin-bottom: 15px;
   }
@@ -347,7 +363,7 @@
     padding: 0;
     margin: 0;
     color: #060606;
-    font-family: 'Akzid-Reg';
+    font-family: "Akzid-Reg";
   }
   .wrapper .content .buttons-cont .content-item .teja .info .desc p:nth-child(1) {
     font-size: 10px;

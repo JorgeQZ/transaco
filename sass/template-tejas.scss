@@ -1,9 +1,18 @@
 /* Jorge Quezada */
 
-
 /* Plantilla Tejas Asfálticas */
 
 @media screen and (min-width: 320px) {
+  .prod-video-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    video {
+      width: 90%;
+      height: auto;
+      max-width: 1000px;
+    }
+  }
   .wrapper {
     .content {
       .buttons-cont {
@@ -48,7 +57,7 @@
             .text {
               width: auto;
               font-size: 25px;
-              font-family: 'Montserrat-Regular';
+              font-family: "Montserrat-Regular";
               font-weight: lighter;
               text-align: center;
               color: white;
@@ -74,7 +83,7 @@
               filter: blur(0px);
             }
             .titulo {
-              font-family: 'Akzid-Bol';
+              font-family: "Akzid-Bol";
               font-size: 12px;
               margin-bottom: 15px;
             }
@@ -92,7 +101,7 @@
                   padding: 0;
                   margin: 0;
                   color: #060606;
-                  font-family: 'Akzid-Reg';
+                  font-family: "Akzid-Reg";
 
                   &:nth-child(1) {
                     font-size: 10px;
@@ -178,7 +187,7 @@
             .text {
               width: 100px;
               font-size: 24px;
-              font-family: 'Montserrat-Regular';
+              font-family: "Montserrat-Regular";
               font-weight: lighter;
               text-align: center;
               color: white;
@@ -204,7 +213,7 @@
               filter: blur(0px);
             }
             .titulo {
-              font-family: 'Akzid-Bol';
+              font-family: "Akzid-Bol";
               font-size: 12px;
               margin-bottom: 15px;
             }
@@ -224,7 +233,7 @@
                   padding: 0;
                   margin: 0;
                   color: #060606;
-                  font-family: 'Akzid-Reg';
+                  font-family: "Akzid-Reg";
 
                   &:nth-child(1) {
                     font-size: 10px;
@@ -305,7 +314,7 @@
             .text {
               width: 100px;
               font-size: 18px;
-              font-family: 'Montserrat-Regular';
+              font-family: "Montserrat-Regular";
               font-weight: lighter;
               text-align: center;
               color: white;
@@ -331,7 +340,7 @@
               filter: blur(0px);
             }
             .titulo {
-              font-family: 'Akzid-Bol';
+              font-family: "Akzid-Bol";
               font-size: 12px;
               margin-bottom: 15px;
             }
@@ -351,7 +360,7 @@
                   padding: 0;
                   margin: 0;
                   color: #060606;
-                  font-family: 'Akzid-Reg';
+                  font-family: "Akzid-Reg";
 
                   &:nth-child(1) {
                     font-size: 10px;

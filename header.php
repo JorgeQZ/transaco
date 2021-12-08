@@ -50,6 +50,24 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9S7K3L"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+	<?php if(is_front_page()): ?>
+	<div class="modal-anuncio-membrana" id="polyglass-anuncio">
+
+		<div class="box">
+		<div class="close-anuncio" id="close-anuncio">x</div>
+			<div class="title">
+				Membranas Asfálticas Polyglass
+				<br>
+				<small>Contacto</small>
+			</div>
+			<?php
+			echo do_shortcode('[contact-form-7 id="2120" title="Membranas asfalticas"]');
+			?>
+		</div>
+	</div>
+	<?php endif ?>
+
 	<header>
 		<div class="logo-owens">
 			<a href="<?php echo esc_url(home_url('/home'));  ?>">
@@ -58,11 +76,11 @@
 		</div>
 		<div>
 
-			<?php 
+			<?php
 			$args = array (
 				'theme-location' => 'menu',
 				'container'		 => 'nav',
-				'container-class'=> 'menu' 
+				'container-class'=> 'menu'
 			);
 
 			wp_nav_menu($args);

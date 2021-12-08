@@ -10,29 +10,6 @@
  */
 get_header();
 ?>
-
-
-<?php
-$slide1 = get_field('slide-1');
-$slide2 = get_field('slide-2');
-$slide3 = get_field('slide-3');
-$slide4 = get_field('slide-4');
-$slide5 = get_field('slide-5');
-?>
-<section id="section-img-inte">
-    <div class="slider">
-        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide1 ?>');"></div>
-        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide2 ?>');"></div>
-        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide3 ?>');"></div>
-        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide4 ?>');"></div>
-        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide5 ?>');"></div>
-    </div>
-</section>
-
-<section id="section-slider"><?php echo do_shortcode('[slide-anything id="226"]'); ?></section>
-
-<!-- Sección Disclaimer -->
-
 <style>
 .contenedor-modulo-disclaimer {
     padding: 90px 10px 90px 10px;
@@ -111,18 +88,47 @@ $slide5 = get_field('slide-5');
 
 </style>
 
-<section class="contenedor-modulo-disclaimer">
-    <div class="cont-modulo-disclaimer">
-        <div class="cont-img">
-            <img src="http://transaco.cl/wp-content/uploads/2020/06/icon-disclaimer.png" alt="">
-        </div>
-        <div class="cont-info">
-            <p class="desc">
-                “Estimado cliente, para ejercer el derecho de retracto y las garantías legales se estará a lo establecido en la Ley N°19.496 sobre Protección de los Derechos de los Consumidores (la “Ley”). En tal sentido, el derecho a retracto deberá ejercerse dentro del plazo de diez días contados desde la recepción del producto por el cliente, acompañando éste la respectiva boleta, factura o cualquier otro documento que acredite la compra, siempre que el producto se encuentre en perfecto estado y con sus elementos originales del embalaje en buen estado. Por su parte, los derechos establecidos en los artículos 19 y 20 de la Ley deberán ejercerse dentro del plazo de tres meses contados desde la recepción del producto por el cliente, acompañando éste la respectiva boleta, factura o cualquier otro documento que acredite la compra, siempre que el producto se encuentre en perfecto estado. <span> Durante la vigencia del actual Estado de Excepción Constitucional de catástrofe por calamidad pública, y hasta la fecha de su término efectivo, se entenderán suspendidos los plazos señalados para el ejercicio de estos derechos. </span>"
-            </p>
-        </div>
+<?php
+$slide1 = get_field('slide-1');
+$slide2 = get_field('slide-2');
+$slide3 = get_field('slide-3');
+$slide4 = get_field('slide-4');
+$slide5 = get_field('slide-5');
+?>
+<section id="section-img-inte">
+    <div class="slider">
+        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide1 ?>');"></div>
+        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide2 ?>');"></div>
+        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide3 ?>');"></div>
+        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide4 ?>');"></div>
+        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide5 ?>');"></div>
     </div>
 </section>
+
+<div class="contain-wrapper">
+    <div class="column">
+        <section id="section-slider"><?php echo do_shortcode('[slide-anything id="226"]'); ?></section>
+
+        <!-- Sección Disclaimer -->
+        <section class="contenedor-modulo-disclaimer">
+            <div class="cont-modulo-disclaimer">
+                <div class="cont-img">
+                    <img src="http://transaco.cl/wp-content/uploads/2020/06/icon-disclaimer.png" alt="">
+                </div>
+                <div class="cont-info">
+                    <p class="desc">
+                        “Estimado cliente, para ejercer el derecho de retracto y las garantías legales se estará a lo establecido en la Ley N°19.496 sobre Protección de los Derechos de los Consumidores (la “Ley”). En tal sentido, el derecho a retracto deberá ejercerse dentro del plazo de diez días contados desde la recepción del producto por el cliente, acompañando éste la respectiva boleta, factura o cualquier otro documento que acredite la compra, siempre que el producto se encuentre en perfecto estado y con sus elementos originales del embalaje en buen estado. Por su parte, los derechos establecidos en los artículos 19 y 20 de la Ley deberán ejercerse dentro del plazo de tres meses contados desde la recepción del producto por el cliente, acompañando éste la respectiva boleta, factura o cualquier otro documento que acredite la compra, siempre que el producto se encuentre en perfecto estado. <span> Durante la vigencia del actual Estado de Excepción Constitucional de catástrofe por calamidad pública, y hasta la fecha de su término efectivo, se entenderán suspendidos los plazos señalados para el ejercicio de estos derechos. </span>"
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="column">
+    <a id="popup-anuncio">
+        <img src="<?php echo get_field('anuncio_imagen'); ?>" alt="Anuncio Polyglass">
+</a>
+    </div>
+</div>
 
 <!-- Fin Sección Disclaimer -->
 
@@ -144,7 +150,9 @@ $slide5 = get_field('slide-5');
             </div>
         </div>
         <div class="cont-img-compro-xs">
+
             <img class="img-compro" src="<?php echo get_field('imagen_nuestro_compromiso'); ?>">
+
         </div>
     </div>
 </section>

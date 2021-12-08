@@ -114,7 +114,8 @@ $slider = get_field('sa_slider_pc', $id_page);
                     </div>
 
                     <?php
-					endwhile;
+                    endwhile;
+                    wp_reset_query();
 					?>
                 </div>
             </div>
@@ -193,7 +194,8 @@ $slider = get_field('sa_slider_pc', $id_page);
                     </div>
 
                     <?php
-					endwhile;
+                    endwhile;
+                    wp_reset_query();
 					?>
                 </div>
             </div>
@@ -272,7 +274,8 @@ $slider = get_field('sa_slider_pc', $id_page);
 
                     </div>
                     <?php
-					endwhile;
+                    endwhile;
+                    wp_reset_query();
 					?>
                 </div>
             </div>
@@ -282,13 +285,26 @@ $slider = get_field('sa_slider_pc', $id_page);
 
         <div class="slider-cont-tejas act" id="s1">
             <section class="slider-">
+                <?php
+
+            $video_mp4 =  get_field('video_supreme', $id_page);
+
+            if(!empty($video_mp4)):
+
+            ?>
+
                 <div class="titulo">
                     <p>Video</p>
                 </div>
                 <div class="prod-video-cont">
-                    <iframe width="100%" height="400" src="https://www.youtube.com/watch?v=aH1x81c-APc&ab_channel=OwensCorning" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 800px; margin: 0 auto;"></iframe>
+                    <video controls preload true autoplay>
+                        <source src="<?php echo $video_mp4; ?>" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
                 </div>
+                <?php endif; ?>
             </section>
+
             <section class="slider-">
                 <div class="titulo">
                     <p><?php echo get_field('titulo_slider_supreme', $id_page);  ?></p>
@@ -302,6 +318,24 @@ $slider = get_field('sa_slider_pc', $id_page);
 
         <div class="slider-cont-tejas " id="s2">
             <section class="slider-">
+                <?php
+            $video_mp4_oak =  get_field('video_oakridge', $id_page);
+
+            if(!empty($video_mp4_oak)):
+            ?>
+                <div class="titulo">
+                    <p>Video</p>
+                </div>
+                <div class="prod-video-cont">
+                    <video controls>
+                        <source src="<?php echo $video_mp4_oak; ?>" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <?php endif; ?>
+            </section>
+
+            <section class="slider-">
                 <div class="titulo">
                     <p><?php echo get_field('titulo_slider_oakridge',$id_page);  ?></p>
                 </div>
@@ -312,6 +346,21 @@ $slider = get_field('sa_slider_pc', $id_page);
         </div>
 
         <div class="slider-cont-tejas" id="s3">
+            <section class="slider-">
+                <?php
+            $video_duration = get_field('video_duration', $id_page);
+            if(!empty($video_duration)):
+            ?>
+                <div class="titulo">
+                    <p>Video</p>
+                </div>
+                <div class="prod-video-cont">
+                    <?php
+                        echo do_shortcode($video_duration);
+                    ?>
+                </div>
+                <?php endif; ?>
+            </section>
             <section class="slider-">
                 <div class="titulo">
                     <p><?php echo get_field('titulo_slider_duration', $id_page);  ?></p>
@@ -340,6 +389,9 @@ $slider = get_field('sa_slider_pc', $id_page);
     <!-- menu principal -->
 </div>
 <script>
+var sup_video = $('#s1 video');
+var oak_video = $('#s2 video');
+var dur_video = $('#s3 video');
 $(document).ready(function() {
 
     var getUrlParameter = function getUrlParameter(sParam) {
@@ -356,6 +408,10 @@ $(document).ready(function() {
             }
         }
     };
+
+
+
+
     var tech = getUrlParameter('modelo');
     if (tech == 'supreme') {
         $('.button-item').removeClass('act');
@@ -400,6 +456,7 @@ $(document).ready(function() {
     }
 
 });
+
 $('#supreme').click(function() {
     $('.button-item').removeClass('act');
     $('.slider-cont-tejas').removeClass('act');
@@ -411,6 +468,18 @@ $('#supreme').click(function() {
     $('#tejas-1 .tejas-item').addClass('act');
     $('#t1').addClass('act');
     $('#s1').addClass('act');
+
+    if (oak_video.get(0)) {
+        oak_video.get(0).pause();
+    }
+
+    if (dur_video.get(0)) {
+        dur_video.get(0).pause();
+    }
+
+    if (sup_video.get(0).paused) {
+        sup_video.get(0).play();
+    }
 });
 $('#oakridge').click(function() {
     $('.button-item').removeClass('act');
@@ -425,6 +494,20 @@ $('#oakridge').click(function() {
     $('#tejas-2 .tejas-item').addClass('act');
     $('#t2').addClass('act');
     $('#s2').addClass('act');
+    console.log(sup_video.get(0), oak_video, dur_video);
+
+    if (sup_video.get(0)) {
+        sup_video.get(0).pause();
+    }
+
+    if (dur_video.get(0)) {
+        dur_video.get(0).pause();
+    }
+
+    if (oak_video.get(0).paused) {
+        oak_video.get(0).play();
+    }
+
 });
 $('#duration').click(function() {
     $('.button-item').removeClass('act');
@@ -439,6 +522,18 @@ $('#duration').click(function() {
     $('#tejas-3 .tejas-item').addClass('act');
     $('#t3').addClass('act');
     $('#s3').addClass('act');
+
+    if (oak_video.get(0)) {
+        oak_video.get(0).pause();
+    }
+
+    if (sup_video.get(0)) {
+        sup_video.get(0).pause();
+    }
+
+    if (dur_video.get(0).paused) {
+        dur_video.get(0).play();
+    }
 });
 </script>
 <?php get_footer(); ?>

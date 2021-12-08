@@ -180,7 +180,30 @@ $second_slider =  get_field('sa_slider_pc', $id);
         </div>
         <div class="item-cont" style="background-image: url(<?php echo $img; ?>)">
         </div>
+
+        <!-- Video -->
+        <div class="slider-">
+            <?php
+            $video_mp4 =  get_field('video', $id_page);
+            if(!empty($video_mp4)):
+            ?>
+            <div class="titulo">
+                <p>Video</p>
+            </div>
+            <div class="prod-video-cont">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/160xR2QX1MY?controls=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>
+                <?php echo $video_mp4; ?>
+                <!-- <video controls preload true autoplay>
+                    <source src="<?php echo $video_mp4; ?>" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video> -->
+            </div>
+            <?php endif; ?>
+        </div>
+        <!-- Video -->
+
     </div>
+
 
     <!-- Slider -->
     <section class="slider-">
