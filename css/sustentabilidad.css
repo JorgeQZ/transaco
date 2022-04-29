@@ -1,0 +1,108 @@
+#sustentabilidad .wrapper .content .banner {
+  width: 100%;
+}
+
+.blue-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #316ab1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  line-height: 1;
+  font-family: 'Oswald-SemiBold';
+  padding-bottom: 10px;
+}
+
+.blue-title span {
+  padding: 10px;
+}
+
+.blue-title span img {
+  width: 40px;
+  width: auto;
+  height: 40px;
+}
+
+.desc {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.desc-img img {
+  width: 100%;
+}
+
+hr {
+  background-color: #000;
+  opacity: 1;
+  height: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item {
+    padding: 30px 0;
+    display: block;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item .column {
+    width: 100%;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item .column img {
+    margin-top: 20px;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-videos {
+    padding: 30px 0;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-videos .grid video, #sustentabilidad .wrapper .content .inner-wrapper .inner-videos .grid iframe {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #sustentabilidad .wrapper .content .banner {
+    width: 100%;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper {
+    padding: 20px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item {
+    padding: 80px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item .column:nth-child(1) {
+    width: 55%;
+    padding-right: 40px;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item .column:nth-child(2) {
+    width: 45%;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-videos {
+    padding: 80px 0;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-videos .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-videos .grid video, #sustentabilidad .wrapper .content .inner-wrapper .inner-videos .grid iframe {
+    width: 49%;
+  }
+}

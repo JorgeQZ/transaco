@@ -1,5 +1,21 @@
 /* Jorge Quezada */
 @media screen and (min-width: 320px) {
+  .prod-video-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .prod-video-cont video {
+    width: 90%;
+    height: auto;
+    max-width: 1000px;
+  }
   .wrapper .content .productos-cont {
     display: -webkit-box;
     display: -ms-flexbox;
