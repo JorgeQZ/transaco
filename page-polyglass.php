@@ -78,6 +78,7 @@ $slider = get_field('sa_slider_pc');
         </div>
 
 
+<<<<<<< HEAD
 		<section id="wearepolyglass" class="slider-">
 			<div class="titulo">
 				<p>Video</p>
@@ -86,6 +87,8 @@ $slider = get_field('sa_slider_pc');
 				<iframe style="width: 100%; max-width: 1024px; height: 500px; margin: 0 auto;" src="https://www.youtube-nocookie.com/embed/wLNdNQTgljs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
 			</div>
 		</section>
+=======
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
         <section class="slider-">
             <div class="titulo">
                 <p>Productos Complementarios</p>

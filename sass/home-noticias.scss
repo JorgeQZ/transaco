@@ -1,0 +1,248 @@
+/*JAQZ*/
+@media screen and (min-width: 320px) {
+  .home-noticias {
+    width: 100%;
+    .home-noticias-cont {
+      position: relative;
+      list-style: none;
+      margin: 0px;
+      height: 250px;
+      .home-noticias-item {
+        height: 250px;
+        float: left;
+        display: block;
+        position: relative;
+        .info {
+          padding: 25px;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background: rgba(10, 58, 91, 0.5);
+          font-family: "Akzid-Bol";
+          transition: all 0.3s;
+          .titulo {
+            font-size: 30px;
+            line-height: 1;
+            letter-spacing: 1px;
+            color: white;
+            width: 90%;
+            margin: 0;
+            height: auto;
+          }
+          .date {
+            font-family: "Akzid-Reg";
+            font-size: 22px;
+            color: #44a7ff;
+          }
+          .extracto {
+            font-family: "Akzid-Reg";
+            font-size: 15px;
+            display: none;
+            line-height: 18px;
+            color: white;
+            p {
+              width: 75%;
+            }
+          }
+          .mas {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            text-transform: uppercase;
+            display: none;
+            transition: all 0.3s;
+          }
+          &:hover {
+            background: rgba(10, 58, 135, 0.9);
+            .extracto {
+              display: block;
+            }
+            .mas {
+              display: block;
+              cursor: pointer;
+            }
+          }
+        }
+        .bg {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-position: center;
+          background-size: cover;
+          img {
+            width: 100%;
+            height: 450px;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .home-noticias {
+    width: 100%;
+    .home-noticias-cont {
+      position: relative;
+      list-style: none;
+      margin: 0px;
+      height: 350px;
+      .home-noticias-item {
+        height: 350px;
+        width: calc(100% / 3);
+        float: left;
+        display: block;
+        position: relative;
+        .info {
+          padding: 25px;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background: rgba(10, 58, 91, 0.5);
+          font-family: "Akzid-Bol";
+          transition: all 0.3s;
+          .titulo {
+            font-size: 30px;
+            margin: 0;
+            letter-spacing: 1px;
+            color: white;
+            width: 90%;
+          }
+          .date {
+            font-family: "Akzid-Reg";
+            font-size: 22px;
+            color: #44a7ff;
+          }
+          .extracto {
+            font-family: "Akzid-Reg";
+            font-size: 15px;
+            display: none;
+            line-height: 18px;
+            color: white;
+            p {
+              width: 75%;
+            }
+          }
+          .mas {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            text-transform: uppercase;
+            display: none;
+            transition: all 0.3s;
+          }
+          &:hover {
+            background: rgba(10, 58, 135, 0.9);
+            .extracto {
+              display: block;
+            }
+            .mas {
+              display: block;
+              cursor: pointer;
+            }
+          }
+        }
+        .bg {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          background-position: center;
+          background-size: cover;
+          img {
+            width: 100%;
+            height: 420px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .home-noticias {
+    width: 100%;
+    .home-noticias-cont {
+      position: relative;
+      list-style: none;
+      margin: 0px;
+      height: 300px;
+      .home-noticias-item {
+        height: 300px;
+        width: calc(100% / 3);
+        float: left;
+        display: block;
+        position: relative;
+        .info {
+          padding: 25px;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background: rgba(10, 58, 91, 0.5);
+          font-family: "Akzid-Bol";
+          transition: all 0.3s;
+          .titulo {
+            font-size: 30px;
+            margin: 0;
+            letter-spacing: 1px;
+            color: white;
+            width: 90%;
+          }
+          .date {
+            font-family: "Akzid-Reg";
+            font-size: 22px;
+            color: #44a7ff;
+          }
+          .extracto {
+            font-family: "Akzid-Reg";
+            font-size: 15px;
+            display: none;
+            line-height: 18px;
+            color: white;
+            p {
+              width: 75%;
+            }
+          }
+          .mas {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            text-transform: uppercase;
+            display: none;
+            transition: all 0.3s;
+          }
+          &:hover {
+            background: rgba(10, 58, 135, 0.9);
+            .extracto {
+              display: block;
+            }
+            .mas {
+              display: block;
+              cursor: pointer;
+            }
+          }
+        }
+        .bg {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          background-position: center;
+          background-size: cover;
+          img {
+            width: 100%;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}

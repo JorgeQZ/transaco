@@ -58,7 +58,11 @@ $second_slider =  get_field('sa_slider_pc', $id);
         </div>
 
         <div class="productos-cont">
+<<<<<<< HEAD
             <div class="item-cont">
+=======
+            <div class="item-cont"">
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 				<div class=" titulo">Paneles</div>
             <div class="load">
                 <img src="<?php echo get_template_directory_uri().'/img/loading.gif' ?>" alt="" style="margin: 0 auto;">
@@ -180,18 +184,30 @@ $second_slider =  get_field('sa_slider_pc', $id);
         </div>
         <div class="item-cont" style="background-image: url(<?php echo $img; ?>)">
         </div>
+<<<<<<< HEAD
         
           <!-- Video -->
         <div class="slider-">
             <?php
             $video_mp4 =  get_field('video_yt', $id_page);
+=======
+
+        <!-- Video -->
+        <div class="slider-">
+            <?php
+            $video_mp4 =  get_field('video', $id_page);
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
             if(!empty($video_mp4)):
             ?>
             <div class="titulo">
                 <p>Video</p>
             </div>
             <div class="prod-video-cont">
+<<<<<<< HEAD
 
+=======
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/160xR2QX1MY?controls=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
                 <?php echo $video_mp4; ?>
                 <!-- <video controls preload true autoplay>
                     <source src="<?php echo $video_mp4; ?>" type="video/mp4">
@@ -201,8 +217,15 @@ $second_slider =  get_field('sa_slider_pc', $id);
             <?php endif; ?>
         </div>
         <!-- Video -->
+<<<<<<< HEAD
     </div>
 
+=======
+
+    </div>
+
+
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
     <!-- Slider -->
     <section class="slider-">
         <div class="titulo">

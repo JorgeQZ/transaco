@@ -102,6 +102,7 @@
         }
     }
 
+<<<<<<< HEAD
 		.catalogo-cont {
   border: 2px solid #e8e8e9;
   width: 100%;
@@ -157,6 +158,8 @@
   margin: 0;
 }
 
+=======
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
     </style>
 
     <section class="contenedor-modulo-disclaimer">
@@ -174,18 +177,28 @@
 
     <!-- Fin Sección Disclaimer -->
 
+<<<<<<< HEAD
 	
 
 
+=======
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
     <!-- contenido -->
     <div class="content">
         <div class="titulo">
             <p><?php the_title(); ?></p>
             <small>Garantías y fichas técnicas</small>
+<<<<<<< HEAD
         </div>
 
 
 		
+=======
+
+        </div>
+
+
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 <?php
 	$args = array(
         'post_type' => 'catalogo_productos',
@@ -220,6 +233,7 @@
         wp_reset_query();
     endif;
 ?>
+<<<<<<< HEAD
 		
         <div class="fichas-cont">
             <div class="cabecera">
@@ -227,6 +241,15 @@
 					<div></div>
                 <div>Fichas <br>Técnicas</div>
                 <!--div>Folletos</div-->
+=======
+
+
+        <div class="fichas-cont">
+            <div class="cabecera">
+                <div>Productos</div>
+                <div>Fichas <br>Técnicas</div>
+                <div>Folletos</div>
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
                 <div>Garantías</div>
                 <div>Video</div>
                 <div>Certificado <br>Leed</div>
@@ -279,7 +302,11 @@
 						$ficha_tecnica = get_field('ficha_tecnica', $current_id);
 						$garantia = get_field('garantia', $current_id);
 						$leed = get_field('leed', $current_id);
+<<<<<<< HEAD
 						//$folletos = get_field('folletos', $current_id);
+=======
+						$folletos = get_field('folletos', $current_id);
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
                         $video = get_field('video', $current_id);
 						?>
                 <div class="outer-row">
@@ -289,8 +316,11 @@
                                 <li><?php echo $ficha_nombre;?></li>
                             </ul>
                         </div>
+<<<<<<< HEAD
 						<div class="folleto">
 						</div>
+=======
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
                         <div class="ficha">
                             <?php if($ficha_tecnica){ ?>
                             <a href="<?php echo $ficha_tecnica ?>" target="_blank">
@@ -301,6 +331,7 @@
 
                         </div>
 
+<<<<<<< HEAD
                         <!-- <div class="folleto">-->
                             <?php /** if($folletos){*/ ?>
                             <!--a href="<?php /**echo $folletos**/ ?>" target="_blank"-->
@@ -309,6 +340,16 @@
                             </a-->
                             <?php /**}*/ ?>
                         <!--/div-->
+=======
+                        <div class="folleto">
+                            <?php if($folletos){ ?>
+                            <a href="<?php echo $folletos ?>" target="_blank">
+                                <img src="<?php echo get_template_directory_uri().'/img/save.png' ?>" alt="">
+                                <p>Folleto</p>
+                            </a>
+                            <?php } ?>
+                        </div>
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
                         <div class="garantia">
                             <?php if($garantia){ ?>
                             <a href="<?php echo $garantia ?>" target="_blank">
@@ -355,7 +396,11 @@
                                 $ficha_tecnica = get_field('ficha_tecnica', $current_sub_id);
                                 $garantia = get_field('garantia', $current_sub_id);
                                 $leed = get_field('leed', $current_sub_id);
+<<<<<<< HEAD
                                 //$folletos = get_field('folletos', $current_sub_id);
+=======
+                                $folletos = get_field('folletos', $current_sub_id);
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
                                 $video = get_field('video', $current_sub_id);
 
                             ?>
@@ -366,8 +411,11 @@
 
                             </ul>
                         </div>
+<<<<<<< HEAD
 						<div class="folleto">
 						</div>
+=======
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
                         <div class="ficha">
                             <?php if($ficha_tecnica){ ?>
                             <a href="<?php echo $ficha_tecnica ?>" target="_blank">
@@ -376,6 +424,7 @@
                             </a>
                             <?php } ?>
                         </div>
+<<<<<<< HEAD
                         <!--div class="folleto"-->
                             <?php /** if($folletos){ */ ?>
                             <!--a href="<?php /** echo $folletos */ ?>" target="_blank"-->
@@ -385,6 +434,17 @@
                             <?php /**}*/ ?>
 
                         <!--/div-->
+=======
+                        <div class="folleto">
+                            <?php if($folletos){ ?>
+                            <a href="<?php echo $folletos ?>" target="_blank">
+                                <img src="<?php echo get_template_directory_uri().'/img/save.png' ?>" alt="">
+                                <p>Folleto</p>
+                            </a>
+                            <?php } ?>
+
+                        </div>
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 
                         <div class="garantia">
                             <?php if($garantia){ ?>

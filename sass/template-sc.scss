@@ -1,0 +1,269 @@
+// Jorge Quezada
+$titulo: #595959;
+$c-title-bl: #009cd8;
+@media screen and (min-width: 320px) {
+	.wrapper{
+		.content{
+			.sist-cont{
+				width: 100%;
+				display:block;
+				padding: 30px 0px;
+				> .titulo{
+					font-family: 'Akzid-Reg';
+					color: $titulo;
+					padding: 0px;
+					border-left: 3px solid $c-title-bl;
+					margin-bottom: 20px;
+					padding-left: 7px;
+					font-size: 28px; 
+					line-height: 30px;
+				}
+
+				.sist-item{
+					margin: 5px 0px;
+					background-color: rgba(#000, 0.05);
+					padding: 5px;
+					// border: 4px solid rgba(#000, 0.2);
+					.titulo{
+						p{
+							font-family: 'Akzid-Bol';
+							font-size: 19px;
+							padding: 7px 0;
+							margin: 0px;
+							padding-left: 10px;
+						}
+						img{
+							width: 100%;
+						}
+					}
+
+					.info{
+						padding: 5px;
+						.text{
+							padding: 0;
+							margin: 0;
+							color: #595959;
+							font-family: 'Akzid-Reg';
+						}
+						.file{
+							> div {
+								color: #595959;
+								display: flex;
+								font-family: 'Akzid-Bol';
+								font-size: 10.5px;
+								align-items: center;
+								justify-content: flex-end;
+								a{
+									cursor: pointer;
+									img{
+										width: 80px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.wrapper{
+		.content{
+			.sist-cont{
+				width: 100%;
+				display:block;
+				padding: 30px 0px;
+				> .titulo{
+					font-family: 'Akzid-Reg';
+					color: $titulo;
+					padding: 0px;
+					border-left: 3px solid $c-title-bl;
+					margin-bottom: 20px;
+					padding-left: 7px;
+				}
+				> div {
+					display: flex;
+					justify-content: space-between;
+					flex-flow: row wrap;
+					.sist-item{
+						flex-grow: 1;
+						min-width: 48.8%;
+						max-width: 48.8%;
+						margin: 5px 0px;
+						background-color: rgba(#000, 0.05);
+						padding: 5px;
+
+						.titulo{
+							p{
+								font-family: 'Akzid-Bol';
+								font-size: 19px;
+								padding: 7px 0;
+								margin: 0px;
+								padding-left: 10px;
+							}
+							img{
+								width: 100%;
+							}
+						}
+
+						.info{
+							padding: 5px;
+							display: flex;
+							.file{
+								width: 50%;
+								text-align: right;
+								> div {
+									color: #595959;
+									display: flex;
+									text-align: right;
+									
+									align-items: center;
+									justify-content: flex-end;
+									a{
+										cursor: pointer;
+										img{
+											width: 80px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.wrapper{
+		.content{
+			.sist-cont{
+				> div {
+					display: flex;
+					justify-content: flex-start;
+					flex-flow: row wrap;
+					.sist-item{
+						flex-grow: 1;
+						min-width: 32.8%;
+						max-width: 32.8%;
+						margin: 5px 0px;
+						background-color: rgba(#000, 0.05);
+						padding: 5px;
+						margin-right: .7%;
+						&:nth-child(3n){
+							margin: 5px 0px;
+						}
+						.titulo{
+							p{
+								font-family: 'Akzid-Bol';
+								font-size: 19px;
+								padding: 7px 0;
+								margin: 0px;
+								padding-left: 10px;
+							}
+							img{
+								width: 100%;
+							}
+						}
+
+						.info{
+							padding: 5px;
+							.text{
+								width: 50%;
+								padding:0px 5px;
+								margin: 0;
+								color: #595959;
+								font-family: 'Akzid-Reg';
+							}
+							.file{
+								> div {
+									color: #595959;
+									display: inline-grid;
+									align-items: center;
+									justify-content: flex-end;
+									a{
+										align-self: flex-end;
+										cursor: pointer;
+										img{
+											width: 80px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.wrapper{
+		.content{
+			.sist-cont{
+				> div {
+					display: flex;
+					justify-content: flex-start;
+					flex-flow: row wrap;
+					.sist-item{
+						flex-grow: 1;
+						min-width: 24.4%;
+						max-width: 24.4%;
+						margin: 5px 0px;
+						background-color: rgba(#000, 0.05);
+						padding: 5px;
+						margin-right: .7%;
+						&:nth-child(3n){
+							margin: 5px 0px;
+							margin-right: .7%;
+						}
+						&:nth-child(4n) {
+							margin: 5px 0px;
+						}
+						.titulo{
+							p{
+								font-family: 'Akzid-Bol';
+								font-size: 19px;
+								padding: 7px 0;
+								margin: 0px;
+								padding-left: 10px;
+							}
+							img{
+								width: 100%;
+							}
+						}
+
+						.info{
+							padding: 5px;
+							.text{
+								width: 50%;
+								padding: 0;
+								margin: 0;
+								color: #595959;
+								font-family: 'Akzid-Reg';
+							}
+							.file{
+								> div {
+									color: #595959;
+									display: flex;
+									align-items: center;
+									justify-content: flex-end;
+									a{
+										cursor: pointer;
+										img{
+											width: 80px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

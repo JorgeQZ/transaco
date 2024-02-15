@@ -114,7 +114,12 @@ $slider = get_field('sa_slider_pc', $id_page);
                     </div>
 
                     <?php
+<<<<<<< HEAD
 					endwhile;
+=======
+                    endwhile;
+                    wp_reset_query();
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 					?>
                 </div>
             </div>
@@ -193,7 +198,12 @@ $slider = get_field('sa_slider_pc', $id_page);
                     </div>
 
                     <?php
+<<<<<<< HEAD
 					endwhile;
+=======
+                    endwhile;
+                    wp_reset_query();
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 					?>
                 </div>
             </div>
@@ -272,7 +282,12 @@ $slider = get_field('sa_slider_pc', $id_page);
 
                     </div>
                     <?php
+<<<<<<< HEAD
 					endwhile;
+=======
+                    endwhile;
+                    wp_reset_query();
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 					?>
                 </div>
             </div>
@@ -294,13 +309,21 @@ $slider = get_field('sa_slider_pc', $id_page);
                     <p>Video</p>
                 </div>
                 <div class="prod-video-cont">
+<<<<<<< HEAD
                     <video controls preload autoplay="autoplay" playsinline="playsinline" preload="metadata">
+=======
+                    <video controls preload true autoplay>
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
                         <source src="<?php echo $video_mp4; ?>" type="video/mp4">
                         Your browser does not support HTML video.
                     </video>
                 </div>
                 <?php endif; ?>
             </section>
+<<<<<<< HEAD
+=======
+
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
             <section class="slider-">
                 <div class="titulo">
                     <p><?php echo get_field('titulo_slider_supreme', $id_page);  ?></p>
@@ -313,7 +336,11 @@ $slider = get_field('sa_slider_pc', $id_page);
 
 
         <div class="slider-cont-tejas " id="s2">
+<<<<<<< HEAD
 			  <section class="slider-">
+=======
+            <section class="slider-">
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
                 <?php
             $video_mp4_oak =  get_field('video_oakridge', $id_page);
 
@@ -330,6 +357,10 @@ $slider = get_field('sa_slider_pc', $id_page);
                 </div>
                 <?php endif; ?>
             </section>
+<<<<<<< HEAD
+=======
+
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
             <section class="slider-">
                 <div class="titulo">
                     <p><?php echo get_field('titulo_slider_oakridge',$id_page);  ?></p>
@@ -341,7 +372,11 @@ $slider = get_field('sa_slider_pc', $id_page);
         </div>
 
         <div class="slider-cont-tejas" id="s3">
+<<<<<<< HEAD
 			 <section class="slider-">
+=======
+            <section class="slider-">
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
                 <?php
             $video_duration = get_field('video_duration', $id_page);
             if(!empty($video_duration)):
@@ -384,11 +419,17 @@ $slider = get_field('sa_slider_pc', $id_page);
     <!-- menu principal -->
 </div>
 <script>
+<<<<<<< HEAD
 
 var sup_video = $('#s1 video');
 var oak_video = $('#s2 video');
 var dur_video = $('#s3 video');
 
+=======
+var sup_video = $('#s1 video');
+var oak_video = $('#s2 video');
+var dur_video = $('#s3 video');
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 $(document).ready(function() {
 
     var getUrlParameter = function getUrlParameter(sParam) {
@@ -405,6 +446,13 @@ $(document).ready(function() {
             }
         }
     };
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
     var tech = getUrlParameter('modelo');
     if (tech == 'supreme') {
         $('.button-item').removeClass('act');
@@ -448,6 +496,7 @@ $(document).ready(function() {
         $('#s3').addClass('act');
     }
 
+<<<<<<< HEAD
 	if (sup_video.get(0)) {
 			sup_video.get(0).play();
 			sup_video.get(0).muted = false;
@@ -455,6 +504,10 @@ $(document).ready(function() {
 	}
 
 });
+=======
+});
+
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 $('#supreme').click(function() {
     $('.button-item').removeClass('act');
     $('.slider-cont-tejas').removeClass('act');
@@ -467,7 +520,11 @@ $('#supreme').click(function() {
     $('#t1').addClass('act');
     $('#s1').addClass('act');
 
+<<<<<<< HEAD
 	if (oak_video.get(0)) {
+=======
+    if (oak_video.get(0)) {
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
         oak_video.get(0).pause();
     }
 
@@ -475,11 +532,17 @@ $('#supreme').click(function() {
         dur_video.get(0).pause();
     }
 
+<<<<<<< HEAD
 	if (sup_video.get(0)) {
 		if (sup_video.get(0).paused) {
 			sup_video.get(0).play();
 		}
 	}
+=======
+    if (sup_video.get(0).paused) {
+        sup_video.get(0).play();
+    }
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 });
 $('#oakridge').click(function() {
     $('.button-item').removeClass('act');
@@ -494,8 +557,14 @@ $('#oakridge').click(function() {
     $('#tejas-2 .tejas-item').addClass('act');
     $('#t2').addClass('act');
     $('#s2').addClass('act');
+<<<<<<< HEAD
 
 	if (sup_video.get(0)) {
+=======
+    console.log(sup_video.get(0), oak_video, dur_video);
+
+    if (sup_video.get(0)) {
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
         sup_video.get(0).pause();
     }
 
@@ -503,11 +572,18 @@ $('#oakridge').click(function() {
         dur_video.get(0).pause();
     }
 
+<<<<<<< HEAD
 	if (oak_video.get(0)) {
     	if (oak_video.get(0).paused) {
         	oak_video.get(0).play();
 	    }
  	}
+=======
+    if (oak_video.get(0).paused) {
+        oak_video.get(0).play();
+    }
+
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 });
 $('#duration').click(function() {
     $('.button-item').removeClass('act');
@@ -523,7 +599,11 @@ $('#duration').click(function() {
     $('#t3').addClass('act');
     $('#s3').addClass('act');
 
+<<<<<<< HEAD
 	 if (oak_video.get(0)) {
+=======
+    if (oak_video.get(0)) {
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
         oak_video.get(0).pause();
     }
 
@@ -531,11 +611,17 @@ $('#duration').click(function() {
         sup_video.get(0).pause();
     }
 
+<<<<<<< HEAD
 	if (dur_video.get(0)) {
 		if (dur_video.get(0).paused) {
 			dur_video.get(0).play();
 		}
 	}
+=======
+    if (dur_video.get(0).paused) {
+        dur_video.get(0).play();
+    }
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 });
 </script>
 <?php get_footer(); ?>

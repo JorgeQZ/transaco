@@ -10,6 +10,7 @@
  */
 get_header();
 ?>
+<<<<<<< HEAD
 
 
 <?php
@@ -62,6 +63,8 @@ $slide5 = get_field('slide-5');
 
 <!-- Sección Disclaimer -->
 
+=======
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 <style>
 .contenedor-modulo-disclaimer {
     padding: 90px 10px 90px 10px;
@@ -140,6 +143,7 @@ $slide5 = get_field('slide-5');
 
 </style>
 
+<<<<<<< HEAD
 <section class="contenedor-modulo-disclaimer">
     <div class="cont-modulo-disclaimer">
         <div class="cont-img">
@@ -153,6 +157,50 @@ $slide5 = get_field('slide-5');
     </div>
 </section>
 
+=======
+<?php
+$slide1 = get_field('slide-1');
+$slide2 = get_field('slide-2');
+$slide3 = get_field('slide-3');
+$slide4 = get_field('slide-4');
+$slide5 = get_field('slide-5');
+?>
+<section id="section-img-inte">
+    <div class="slider">
+        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide1 ?>');"></div>
+        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide2 ?>');"></div>
+        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide3 ?>');"></div>
+        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide4 ?>');"></div>
+        <div class="sliderHomeExt" style="background-image: url('<?php echo $slide5 ?>');"></div>
+    </div>
+</section>
+
+<div class="contain-wrapper">
+    <div class="column">
+        <section id="section-slider"><?php echo do_shortcode('[slide-anything id="226"]'); ?></section>
+
+        <!-- Sección Disclaimer -->
+        <section class="contenedor-modulo-disclaimer">
+            <div class="cont-modulo-disclaimer">
+                <div class="cont-img">
+                    <img src="http://transaco.cl/wp-content/uploads/2020/06/icon-disclaimer.png" alt="">
+                </div>
+                <div class="cont-info">
+                    <p class="desc">
+                        “Estimado cliente, para ejercer el derecho de retracto y las garantías legales se estará a lo establecido en la Ley N°19.496 sobre Protección de los Derechos de los Consumidores (la “Ley”). En tal sentido, el derecho a retracto deberá ejercerse dentro del plazo de diez días contados desde la recepción del producto por el cliente, acompañando éste la respectiva boleta, factura o cualquier otro documento que acredite la compra, siempre que el producto se encuentre en perfecto estado y con sus elementos originales del embalaje en buen estado. Por su parte, los derechos establecidos en los artículos 19 y 20 de la Ley deberán ejercerse dentro del plazo de tres meses contados desde la recepción del producto por el cliente, acompañando éste la respectiva boleta, factura o cualquier otro documento que acredite la compra, siempre que el producto se encuentre en perfecto estado. <span> Durante la vigencia del actual Estado de Excepción Constitucional de catástrofe por calamidad pública, y hasta la fecha de su término efectivo, se entenderán suspendidos los plazos señalados para el ejercicio de estos derechos. </span>"
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="column">
+    <a id="popup-anuncio">
+        <img src="<?php echo get_field('anuncio_imagen'); ?>" alt="Anuncio Polyglass">
+</a>
+    </div>
+</div>
+
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 <!-- Fin Sección Disclaimer -->
 
 
@@ -173,7 +221,13 @@ $slide5 = get_field('slide-5');
             </div>
         </div>
         <div class="cont-img-compro-xs">
+<<<<<<< HEAD
             <img class="img-compro" src="<?php echo get_field('imagen_nuestro_compromiso'); ?>">
+=======
+
+            <img class="img-compro" src="<?php echo get_field('imagen_nuestro_compromiso'); ?>">
+
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
         </div>
     </div>
 </section>
@@ -224,7 +278,11 @@ $slide5 = get_field('slide-5');
 
 
 <!-- Inicio de sección de videos -->
+<<<<<<< HEAD
 <!--section id="video">
+=======
+<section id="video">
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
     <div class="cont-video">
         <div class="child-video-1">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/P31cjNEZNLg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -238,6 +296,7 @@ $slide5 = get_field('slide-5');
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 </section-->
 <section id="menuItems">
     <div>
@@ -259,6 +318,16 @@ $slide5 = get_field('slide-5');
 				<a href="tel:+56 2 2797 7734" target="_top">+56 2 2797 7734</a><br>
 			<a href="mailto:felipe.rojas@owenscorning.com" target="_top">felipe.rojas@owenscorning.com</a>
 
+=======
+</section>
+<section id="menuItems">
+    <div>
+        <p>
+            <span class="bold__">Oficinas y Showroom</span><br>
+            San Crescente 81, Piso 7 <br>
+            Las Condes<br>
+            Tel: (56) 227 977 700 <br>
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 
         </p>
         <p></p>
@@ -268,7 +337,11 @@ $slide5 = get_field('slide-5');
             <span class="bold__">Bodega</span><br>
             Av. Vizcaya N. 16.701-3 <br>
             Parque Industrial Los Espinos - Pudahuel <br>
+<<<<<<< HEAD
             Tel: <a href="tel:(+56) 227 977 732" target="_top">(56) 227 977 732</a><br>
+=======
+            Tel: (56) 227 977 732<br>
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
         </p>
     </div>
 </section>

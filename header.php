@@ -50,19 +50,51 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9S7K3L"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+<<<<<<< HEAD
 	<header>
 		<div class="logo-owens">
 			<a href="<?php echo esc_url(home_url('/'));  ?>">
+=======
+
+	<?php if(is_front_page()): ?>
+	<div class="modal-anuncio-membrana" id="polyglass-anuncio">
+
+		<div class="box">
+		<div class="close-anuncio" id="close-anuncio">x</div>
+			<div class="title">
+				Membranas Asfálticas Polyglass
+				<br>
+				<small>Contacto</small>
+			</div>
+			<?php
+			echo do_shortcode('[contact-form-7 id="2120" title="Membranas asfalticas"]');
+			?>
+		</div>
+	</div>
+	<?php endif ?>
+
+	<header>
+		<div class="logo-owens">
+			<a href="<?php echo esc_url(home_url('/home'));  ?>">
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 				<img class="logo-owens" src="<?php echo get_template_directory_uri() . '/img/logo-owens.png' ?>" alt="">
 			</a>
 		</div>
 		<div>
 
+<<<<<<< HEAD
 			<?php 
 			$args = array (
 				'theme-location' => 'menu',
 				'container'		 => 'nav',
 				'container-class'=> 'menu' 
+=======
+			<?php
+			$args = array (
+				'theme-location' => 'menu',
+				'container'		 => 'nav',
+				'container-class'=> 'menu'
+>>>>>>> d37cc0c20eecb27910c078726db35001f92e1921
 			);
 
 			wp_nav_menu($args);
