@@ -1,0 +1,217 @@
+* {
+  scroll-behavior: smooth;
+}
+
+#sustentabilidad {
+  background-image: none;
+}
+
+#sustentabilidad .wrapper .content .banner {
+  width: 100%;
+}
+
+#sustentabilidad .wrapper .content .inner-wrapper .inner-item {
+  width: 85%;
+  margin: 0 auto;
+}
+
+#sustentabilidad .wrapper .content .inner-wrapper .contenedor-general-noticias {
+  background-color: #e6e6e6;
+  padding: 64px 0px;
+}
+
+#sustentabilidad .wrapper .content .inner-wrapper .contenedor-general-noticias .contenedor-noticias {
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#sustentabilidad .wrapper .content .inner-wrapper .contenedor-general-noticias .contenedor-noticias .contenedor-noticia {
+  width: 48%;
+  border-top: 2px solid black;
+}
+
+#sustentabilidad .wrapper .content .inner-wrapper .contenedor-general-noticias .contenedor-noticias .contenedor-noticia h2 {
+  font-size: 24px;
+  line-height: 1;
+  font-family: 'Oswald-SemiBold';
+  margin: 20px 0;
+}
+
+#sustentabilidad .wrapper .content .inner-wrapper .contenedor-general-noticias .contenedor-noticias .contenedor-noticia p {
+  font-size: 15px;
+}
+
+#sustentabilidad .wrapper .content .inner-wrapper .contenedor-general-noticias .contenedor-noticias .contenedor-noticia a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#sustentabilidad .wrapper .content .inner-wrapper .contenedor-general-noticias .contenedor-noticias .contenedor-noticia a svg {
+  color: black;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#sustentabilidad .wrapper .content .inner-wrapper .contenedor-general-noticias .contenedor-noticias .contenedor-noticia a:hover {
+  color: #316ab1;
+}
+
+#sustentabilidad .wrapper .content .inner-wrapper .contenedor-general-noticias .contenedor-noticias .contenedor-noticia a:hover svg {
+  margin-left: 10px;
+  color: #316ab1;
+}
+
+.blue-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #316ab1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 40px;
+  line-height: 1;
+  font-family: 'Oswald-SemiBold';
+  padding-bottom: 10px;
+}
+
+.blue-title span {
+  padding: 10px;
+}
+
+.blue-title span img {
+  width: 40px;
+  width: auto;
+  height: 40px;
+}
+
+.desc {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.desc-img img {
+  width: 100%;
+}
+
+hr {
+  background-color: #000;
+  opacity: 1;
+  height: 2px;
+}
+
+.animate__animated {
+  opacity: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item {
+    width: 92%;
+    padding: 30px 0;
+    display: block;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item .column {
+    width: 100%;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item .column img {
+    height: 35px;
+    margin-top: 0;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item .column .desc-img img {
+    height: auto;
+    margin-top: 30px;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .contenedor-general-noticias .contenedor-noticias {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .contenedor-general-noticias .contenedor-noticias .contenedor-noticia {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .contenedor-general-noticias .contenedor-noticias .contenedor-noticia:last-child {
+    margin-bottom: 0;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-videos {
+    padding: 30px 0;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-videos .grid video {
+    margin: 10px 0;
+    width: 100%;
+    min-height: 300px;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-videos .grid iframe {
+    margin: 10px 0;
+    width: 100%;
+    min-height: 300px;
+  }
+  .blue-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #sustentabilidad .wrapper .content .banner {
+    width: 100%;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper {
+    padding: 20px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item {
+    padding: 80px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item .column:nth-child(1) {
+    width: 55%;
+    padding-right: 40px;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-item .column:nth-child(2) {
+    width: 45%;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-videos {
+    padding: 80px 0;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-videos .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-videos .grid video {
+    width: 49%;
+  }
+  #sustentabilidad .wrapper .content .inner-wrapper .inner-videos .grid iframe {
+    width: 49%;
+  }
+}
