@@ -1,0 +1,258 @@
+.js .tmce-active .wp-editor-area {
+  color: #32373c !important;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .modal-ai-cont {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    top: 0px;
+    z-index: 300;
+    display: none;
+  }
+  .modal-ai-cont .modal-ai-item {
+    width: 95%;
+    min-height: auto;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 0px 0px 20px 4px black;
+            box-shadow: 0px 0px 20px 4px black;
+    border: 3px solid white;
+    padding: 20px;
+    padding-top: 50px;
+    margin: 0 auto;
+    top: 50px;
+  }
+  .modal-ai-cont .modal-ai-item button {
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+  }
+  .modal-ai-cont .modal-ai-item button img {
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .modal-ai-cont .modal-ai-item button img:hover {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  .modal-ai-cont .modal-ai-item .titulo {
+    font-family: 'Akzid-Bol';
+    font-size: 30px;
+    color: white;
+    margin: 0;
+  }
+  .modal-ai-cont .modal-ai-item .info {
+    width: 100%;
+  }
+  .modal-ai-cont .modal-ai-item .info .desc {
+    margin: 20px 0px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .modal-ai-cont .modal-ai-item .info .desc .img {
+    text-align: center;
+    padding: 10px;
+  }
+  .modal-ai-cont .modal-ai-item .info .desc .img:nth-child(1) {
+    width: 39%;
+    background-color: white;
+  }
+  .modal-ai-cont .modal-ai-item .info .desc .img:nth-child(2) {
+    width: 59%;
+    background-color: white;
+  }
+  .modal-ai-cont .modal-ai-item .info .desc .img img {
+    max-width: 100%;
+    margin-bottom: -4px;
+    min-height: 250px;
+    max-height: 250px;
+  }
+  .modal-ai-cont .modal-ai-item .info .galery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal-ai-cont .modal-ai-item .info .galery .img {
+    width: 18.5%;
+  }
+  .modal-ai-cont .modal-ai-item .info .galery .img img {
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .modal-ai-cont .modal-ai-item .info .galery .img img:hover {
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-ai-cont {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+  }
+  .modal-ai-cont .modal-ai-item {
+    width: 70%;
+    min-height: auto;
+    background-color: #FFF;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+  }
+  .modal-ai-cont .modal-ai-item button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    outline: none;
+  }
+  .modal-ai-cont .modal-ai-item .titulo {
+    font-family: 'Akzid-Bol';
+    font-size: 30px;
+    color: white;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .modal-ai-cont {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+  }
+  .modal-ai-cont .modal-ai-item {
+    width: 70%;
+    min-height: auto;
+    background-color: #FFF;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+  }
+  .modal-ai-cont .modal-ai-item button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    outline: none;
+  }
+  .modal-ai-cont .modal-ai-item .titulo {
+    font-family: 'Akzid-Bol';
+    font-size: 30px;
+    color: white;
+    margin: 0;
+  }
+  .modal-ai-cont .modal-ai-item .info {
+    width: 100%;
+  }
+  .modal-ai-cont .modal-ai-item .info .desc {
+    margin: 20px 0px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .modal-ai-cont .modal-ai-item .info .desc .img {
+    text-align: center;
+    padding: 10px;
+  }
+  .modal-ai-cont .modal-ai-item .info .desc .img:nth-child(1) {
+    width: 39%;
+    background-color: white;
+  }
+  .modal-ai-cont .modal-ai-item .info .desc .img:nth-child(2) {
+    width: 59%;
+    background-color: white;
+    cursor: pointer;
+  }
+  .modal-ai-cont .modal-ai-item .info .desc .img img {
+    max-width: 100%;
+    margin-bottom: -4px;
+    min-height: 280px;
+    max-height: 280px;
+  }
+  .modal-ai-cont .modal-ai-item .info .galery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal-ai-cont .modal-ai-item .info .galery .img {
+    width: 18.5%;
+  }
+  .modal-ai-cont .modal-ai-item .info .galery .img img {
+    width: 100%;
+    border: 2px solid grey;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}

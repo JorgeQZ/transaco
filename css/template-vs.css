@@ -1,0 +1,222 @@
+/* Jorge Quezada */
+@media screen and (min-width: 320px) {
+  .wrapper .content .productos-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrapper .content .productos-cont .item-cont {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 100%;
+    min-height: 180px;
+    background-color: rgba(0, 0, 0, 0.05);
+    background-position: center;
+    background-size: cover;
+    margin: 5px auto;
+    position: relative;
+  }
+  .wrapper .content .productos-cont .item-cont > a img {
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .wrapper .content .productos-cont .item-cont .titulo {
+    font-family: 'Akzid-Bol';
+    font-size: 19px;
+    padding: 7px;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont {
+    padding: 5px;
+    overflow: hidden;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    float: left;
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li .img_desc {
+    width: 45%;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li .img_desc img {
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li .img_desc img:hover {
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li .info {
+    width: 45%;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li .info p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Akzid-Reg';
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li .info a img {
+    width: 40px;
+    margin-top: 5px;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont .control {
+    padding: 2px;
+    width: 10%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont .control img {
+    height: 50px;
+    margin-left: -5px;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont .control.left {
+    left: 0px;
+    bottom: 5px;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont .control.left img {
+    height: 50px;
+    margin-left: 2px;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper .content .productos-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .wrapper .content .productos-cont .item-cont {
+    max-width: 32.8%;
+    margin: 0px;
+    min-height: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper .content .productos-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .wrapper .content .productos-cont .item-cont {
+    width: 32.8%;
+    margin: 0px;
+    min-height: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    background-position: center;
+    background-size: cover;
+  }
+  .wrapper .content .productos-cont .item-cont > a img {
+    width: 60px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .wrapper .content .productos-cont .item-cont .titulo {
+    font-family: 'Akzid-Bol';
+    font-size: 19px;
+    padding: 7px;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont {
+    padding: 5px;
+    overflow: hidden;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li .img_desc {
+    width: 45%;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li .img_desc img {
+    width: 100%;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li .info {
+    width: 45%;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li .info p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Akzid-Reg';
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .wrapper .content .productos-cont .item-cont .slider-cont ul li .info a img {
+    width: 40px;
+    margin-top: 5px;
+  }
+}
